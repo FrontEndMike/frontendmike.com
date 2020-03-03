@@ -1,0 +1,562 @@
+/************************************************
+
+Stylesheet: Global Stylesheet
+
+*************************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700');
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+h1,h2, h3{
+	font-family: $Roboto;
+	text-transform: uppercase;
+	margin: 0 auto;
+	line-height: 1;
+}
+h1{
+	color: $blue;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+h2{
+	color: $gray;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+h3{
+	color: $gray;
+}
+p{
+	font-family: $Open;
+}
+.button,.btn{
+	border: 0;
+	border-radius: 0px;
+	background-color: black;
+	color: white;
+	max-width: 110px;
+	display: block;
+	margin: 0 auto;
+	font-size: .9rem;
+	padding: .85em 1em;
+	&:hover {
+	    color: white;
+	    background-color: $blue;
+	    border: 0;
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+
+.page-title {
+	
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+// Post meta  
+.byline {
+	color: #999;
+	time {}
+}
+
+// Entry content  
+.entry-content {
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft, img.alignleft { 
+		margin-right: 1.5em; 
+		display: inline; 
+		float: left; 
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right; 
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+			
+	video, object {
+		max-width: 100%;
+		height: auto;
+		}
+
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+		}
+
+} 
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+
+	// Images inside wp-caption  
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+} 
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+	@include button;
+}
+
+
+code, kbd{
+	background-color: transparent;
+	padding: .5rem;
+	border: none;
+}
+.featured-image{
+	margin-bottom: 2rem;
+}
+/*********************
+VISUAL EDITOR STYLES
+*********************/
+// Makes content look better in visual editor
+body#tinymce {
+   	margin: 20px;
+}
+
+/*********************
+PLUGIN STYLES
+*********************/
+// Makes Gravity Forms play nice with Foundation Form styles
+.gform_body ul {
+    list-style: none outside none;
+    margin: 0;
+}
+
+// Hide Gravity Forms validation fields when GFCSS is disabled
+.gform_validation_container,
+.gform_wrapper .gform_validation_container,
+body .gform_wrapper li.gform_validation_container,
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
+    display: none !important;
+    position: absolute !important;
+    left: -9000px;
+}
+/*********************
+HEADER
+*********************/
+#top-bar-menu{
+	padding: 0.75rem 0rem;
+	a{
+		color: black;
+		letter-spacing: 1px;
+		padding: .4rem 0rem;
+		margin: 0rem 1rem;
+	}
+	.active a{
+		border-bottom: 2px solid $blue; 
+		background-color: transparent;
+	}
+	&.top-bar{
+		background-color: white;
+		position: fixed;
+		width: 100%;
+		@include breakpoint(small down) {
+			padding: 0rem;
+		}
+	}
+	.menu{
+		background-color: white;
+	}
+}
+.header{
+.top-bar-left,
+    .top-bar-right {
+      flex: none;
+      max-width: 100%;
+    }
+}
+.sub-menu{
+	height: 2rem;
+	background-color: #e6e6e6;
+	text-transform: uppercase;
+	@include breakpoint(small down) {
+		display: none;
+	}
+}
+#sub-nav {
+    float: right;
+    height: 2rem;
+    font-size: .8rem;
+}
+img.ham-menu {
+    max-width: 2.5rem;
+}
+/*********************
+FOOTER
+*********************/
+/*********************
+FOOTER STYLES
+*********************/
+footer.footer{
+	margin-top: 0rem;
+	clear: both;
+	margin-top: 1em;
+	background-color: black;
+	p{
+		margin: 1rem;
+		color: white;
+		}
+	a{
+		color: black;
+		background-color: transparent;
+		&:hover{
+			color:black;
+		}
+	}
+	.menu .active>a, .menu .is-active>a {
+	    background: transparent;
+	}
+	#footer-links{
+		float: right;
+		display: block;
+		text-align: right;
+	}
+}
+.copyright{
+	text-align: center;
+}
+
+/*********************
+HOME
+*********************/
+/*.hero{
+	padding: 15rem 0rem;
+	background-color: gray;
+	text-align: center;
+	margin-bottom: 3rem;
+}*/
+.hero{
+	padding: 2rem;
+	h2{
+		margin-bottom: 1rem;
+	}
+	p{
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 38px;
+		line-height: 27px;
+		text-transform: uppercase;
+		color: #666;
+		font-family: 'Roboto', sans-serif;
+		margin-top: 25px;
+	}
+}
+#landing{
+	background: /* top, #00000000 #ffffff */ 
+		linear-gradient( #ffffff, rgba(255, 255, 255, 0.63) ), 
+		/* bottom, image */ 
+		url(../images/dojo.jpg);
+	padding-bottom: 15rem;
+	padding-top: 15rem;
+}
+.info{
+	padding: 4rem 0rem;
+	figure {
+		max-width: 10rem;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+.contact-callout{
+	background-color: #e6e6e6;
+	padding: 4rem 0rem;
+}
+
+.full-width{
+	padding: 8rem 2rem;
+	max-width: 50rem;
+	display: block;
+	margin: 0 auto;
+}
+
+/*********************
+FULL WIDTH
+*********************/
+.feat-image{
+	margin-bottom: 2rem;
+}
+
+
+
+
+/*********************
+BLOG
+*********************/
+
+.archive-grid{
+	max-width: 70rem;
+	display: block;
+	margin: 0 auto;
+	padding: 0rem 2rem;
+}
+.read-more-button{
+	margin-top: 2rem;
+}
+.single{
+	.content{
+		padding: 8rem 2rem;
+		max-width: 50rem;
+		display: block;
+		margin: 0 auto;
+	}
+}
+/*.blog-archive-post:last-of-type{
+	hr{
+		display: none;
+	}
+}*/
+.blog-archive-post{
+	/*border-bottom: 1px dotted darkgray;*/
+	&.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+    float: left;
+}
+
+	h3.title{
+		text-align: left;
+		margin: 1rem 0rem;
+		font-size: 1.5rem;
+		text-transform: none;
+		font-weight: 700;
+	}
+}
+
+.single-title{
+	margin-bottom: 4rem;
+	font-size: 2rem;
+	text-align: center;
+}
+.panel{
+	article{
+		padding: 2rem;
+	}
+}
+.blog-hero{
+	padding: 6rem 2rem 3rem;
+	background-color: transparent;
+	margin-bottom: 0rem;
+	h3{
+		text-transform: none;
+		font-weight: 700;
+		color: $blue;
+		@include breakpoint(small down){
+			font-size: 2rem;
+		}
+	}
+}
+.recent-blog{
+	img: 100%;
+	.large-4{
+		padding: 1rem;
+	}
+	@include breakpoint(small down){
+		.small-12{
+			padding-right: .625rem;
+			padding-left: .625rem;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+.blog-single{
+	margin-bottom: 3rem;
+}
+.recent-blog,.recent-feed-blog{
+	padding: 3rem 0rem;
+	img{
+		width: 100%;
+	}
+	h2{
+		margin-bottom: 2rem;
+	}
+	a.title{
+		display: block;
+		color: black;
+		font-weight: 700;
+		margin: 1rem 0rem;
+		text-align: center;
+	}
+	.blog-entry{
+		padding: 2rem;
+	}
+	.related{
+		padding: 2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*********************
+IMPORTED STYLES
+*********************/
+
+#about{
+	margin-top: 1rem;
+	padding: 3rem 0rem;
+}
+.about-panel{
+	background-color: white;
+	color: black;
+	padding: 1rem;
+}
+.about-panel img{
+	width: 100%;
+}
+.about-panel.img{
+	padding: 0rem;
+	background: none;
+}
+a.link{
+	color: #02bdd5;
+}
+.about-panel .btn{
+	margin-top: 2rem;
+}
+
+section#portfolio{
+	margin: 1rem 0rem;
+}
+section#portfolio .container{
+	padding-bottom: 2rem;
+}
+section#portfolio ul {
+    list-style: none;
+    padding-left: 0rem;
+    text-align: center;
+}
+section#portfolio img{
+	width: 100%;
+}
+section#portfolio h2{
+	text-align: center;
+}
+section#portfolio p{
+	text-align: center;
+
+}
+#landing, #before-blog, #before-hacknight,#hack-image{
+	background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  min-height: 100vh;
+	  height: auto;
+	  @include breakpoint(medium down){
+	  	background-attachment: scroll;
+	  	min-height: 50vh;
+	  }
+}
+#before-blog{
+	background-image: url("../images/futures_fund_1.jpg");
+}
+#before-hacknight{
+	background-image: url("../images/hacknight_group.jpg");
+	@include breakpoint(small down){
+		display: none;
+	}
+}
+#hack-image{
+	background-image: url("../images/hack_night.jpg");
+}
+
+
+#blog {
+	padding: 5rem 1rem;
+	h2{
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	img{
+		max-width: 50px;
+	}
+}
+.fa, .fas{
+	font-size: 6rem;
+}
+/*#before-hacknight{
+	background-image: url(../images/hack_night.jpg);
+	padding-bottom: 0rem;
+	padding-top: 25rem;
+	height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+*/
+
+#hacknight img{
+	width: 100%;
+}
+#hacknight{
+	background-color: #ffc107;
+	padding: 4rem 0rem;
+	h2{
+		margin-bottom: 2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

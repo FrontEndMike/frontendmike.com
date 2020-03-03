@@ -1,0 +1,1310 @@
+{
+    "RPT": {
+        "ScanTime": "0.081 sec.",
+        "ScanFile": "20200303_frontendmike_b918d84878a02abb7322_20200303142653_scan.json",
+        "ScanCreated": "2020-03-03 14:26:54",
+        "ScanPath": "\/home2\/frontendmike\/public_html\/wp-content\/backups-dup-pro\/tmp\/20200303_frontendmike_b918d84878a02abb7322_20200303142653_scan.json"
+    },
+    "SRV": {
+        "Brand": {
+            "LogoAttachmentExists": false,
+            "LogoCount": 0,
+            "LogoFinded": 0,
+            "LogoImageExists": true,
+            "LogoImages": [],
+            "Name": "Default",
+            "Notes": "The default content used when a brand is not defined"
+        },
+        "PHP": {
+            "websrv": true,
+            "openbase": true,
+            "maxtime": true,
+            "openssl": true,
+            "mysqli": true,
+            "allowurlfopen": true,
+            "curlavailable": true,
+            "version": true,
+            "ALL": "Good"
+        },
+        "WP": {
+            "version": true,
+            "core": true,
+            "ismu": false,
+            "ismuplus": true,
+            "ALL": "Good"
+        }
+    },
+    "ARC": {
+        "Size": "0B",
+        "DirCount": "0",
+        "FileCount": "0",
+        "FullCount": "0",
+        "USize": 0,
+        "UDirCount": 0,
+        "UFileCount": 0,
+        "UFullCount": 0,
+        "WarnFileCount": 0,
+        "WarnDirCount": 0,
+        "UnreadableDirCount": 0,
+        "UnreadableFileCount": 0,
+        "FilterDirsAll": [
+            "\/home2\/frontendmike\/public_html\/wp-content\/ai1wm-backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/backups-dup-pro",
+            "\/home2\/frontendmike\/public_html\/wp-content\/backupwordpress",
+            "\/home2\/frontendmike\/public_html\/wp-content\/cache",
+            "\/home2\/frontendmike\/public_html\/wp-content\/content\/cache",
+            "\/home2\/frontendmike\/public_html\/wp-content\/contents\/cache",
+            "\/home2\/frontendmike\/public_html\/wp-content\/infinitewp\/backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/managewp\/backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/old-cache",
+            "\/home2\/frontendmike\/public_html\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+            "\/home2\/frontendmike\/public_html\/wp-content\/plugins\/really-simple-captcha\/tmp",
+            "\/home2\/frontendmike\/public_html\/wp-content\/plugins\/wordfence\/tmp",
+            "\/home2\/frontendmike\/public_html\/wp-content\/updraft",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/aiowps_backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/backup-guard",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/backupbuddy_backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/backupbuddy_temp",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/ithemes-security\/backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/mainwp\/backup",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/pb_backupbuddy",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/snapshots",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/sucuri",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/wp-clone",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/wp_all_backup",
+            "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/wpbackitup_backups",
+            "\/home2\/frontendmike\/public_html\/wp-content\/wfcache",
+            "\/home2\/frontendmike\/public_html\/wp-content\/wishlist-backup",
+            "\/home2\/frontendmike\/public_html\/wp-snapshots"
+        ],
+        "FilterFilesAll": [
+            ".DS_Store",
+            "\/home2\/frontendmike\/public_html\/.htaccess",
+            "\/home2\/frontendmike\/public_html\/wp-config.php",
+            "dbcache",
+            "debug_log",
+            "error.log",
+            "error_log",
+            "objectcache",
+            "pgcache",
+            "ws_ftp.log"
+        ],
+        "FilterExtsAll": [],
+        "FilterInfo": {
+            "Dirs": {
+                "Warning": [],
+                "Unreadable": [],
+                "AddonSites": [],
+                "Core": [
+                    "\/home2\/frontendmike\/public_html\/wp-content\/backups-dup-pro"
+                ],
+                "Global": [
+                    "\/home2\/frontendmike\/public_html\/wp-snapshots",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/ai1wm-backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/backupwordpress",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/content\/cache",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/contents\/cache",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/infinitewp\/backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/managewp\/backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/old-cache",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/updraft",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/wishlist-backup",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/wfcache",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/plugins\/really-simple-captcha\/tmp",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/plugins\/wordfence\/tmp",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/cache",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/aiowps_backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/backupbuddy_temp",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/backupbuddy_backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/ithemes-security\/backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/mainwp\/backup",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/pb_backupbuddy",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/snapshots",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/sucuri",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/wp-clone",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/wp_all_backup",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/wpbackitup_backups",
+                    "\/home2\/frontendmike\/public_html\/wp-content\/uploads\/backup-guard"
+                ],
+                "Instance": []
+            },
+            "Files": {
+                "Warning": [],
+                "Unreadable": [],
+                "Size": [],
+                "Core": [],
+                "Global": [
+                    "error_log",
+                    "error.log",
+                    "debug_log",
+                    "ws_ftp.log",
+                    "dbcache",
+                    "pgcache",
+                    "objectcache",
+                    ".DS_Store",
+                    "\/home2\/frontendmike\/public_html\/.htaccess",
+                    "\/home2\/frontendmike\/public_html\/wp-config.php"
+                ],
+                "Instance": []
+            },
+            "Exts": {
+                "Core": [],
+                "Global": [],
+                "Instance": []
+            },
+            "TreeSize": {
+                "text": "\/home2\/frontendmike\/public_html",
+                "fullPath": "\/home2\/frontendmike\/public_html",
+                "type": "folder",
+                "state": {
+                    "opened": true,
+                    "disabled": false,
+                    "selected": false,
+                    "checked": false,
+                    "checkbox_disabled": false
+                },
+                "children": [
+                    {
+                        "text": ".qidb",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.qidb",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".well-known",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.well-known",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "cgi-bin",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/cgi-bin",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": false,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-admin",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-admin",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": " core-node"
+                        },
+                        "a_attr": {
+                            "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                        }
+                    },
+                    {
+                        "text": "wp-content",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-content",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": " core-node"
+                        },
+                        "a_attr": {
+                            "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                        }
+                    },
+                    {
+                        "text": "wp-includes",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-includes",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": " core-node"
+                        },
+                        "a_attr": {
+                            "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                        }
+                    },
+                    {
+                        "text": ".DS_Store",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.DS_Store",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".ftpquota",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.ftpquota",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".gitattributes",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.gitattributes",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".htaccess",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.htaccess",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": true
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": " filtered-node"
+                        },
+                        "a_attr": {
+                            "title": "This file is filtered."
+                        }
+                    },
+                    {
+                        "text": ".htaccess06152019",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.htaccess06152019",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "error_log",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/error_log",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "index.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/index.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "license.txt",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/license.txt",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "readme.html",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/readme.html",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-activate.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-activate.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-blog-header.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-blog-header.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-comments-post.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-comments-post.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-config-sample.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-config-sample.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-config.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-config.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": true
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": " filtered-node"
+                        },
+                        "a_attr": {
+                            "title": "This file is filtered."
+                        }
+                    },
+                    {
+                        "text": "wp-cron.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-cron.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-links-opml.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-links-opml.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-load.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-load.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-login.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-login.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-mail.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-mail.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-settings.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-settings.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-signup.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-signup.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-trackback.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-trackback.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "xmlrpc.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/xmlrpc.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    }
+                ],
+                "li_attr": {
+                    "class": " root-node core-node"
+                },
+                "a_attr": {
+                    "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                }
+            },
+            "TreeWarning": {
+                "text": "\/home2\/frontendmike\/public_html",
+                "fullPath": "\/home2\/frontendmike\/public_html",
+                "type": "folder",
+                "state": {
+                    "opened": true,
+                    "disabled": false,
+                    "selected": false,
+                    "checked": false,
+                    "checkbox_disabled": false
+                },
+                "children": [
+                    {
+                        "text": ".qidb",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.qidb",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".well-known",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.well-known",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "cgi-bin",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/cgi-bin",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": false,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-admin",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-admin",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": " core-node"
+                        },
+                        "a_attr": {
+                            "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                        }
+                    },
+                    {
+                        "text": "wp-content",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-content",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": " core-node"
+                        },
+                        "a_attr": {
+                            "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                        }
+                    },
+                    {
+                        "text": "wp-includes",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-includes",
+                        "type": "folder",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": true,
+                        "li_attr": {
+                            "class": " core-node"
+                        },
+                        "a_attr": {
+                            "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                        }
+                    },
+                    {
+                        "text": ".DS_Store",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.DS_Store",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".ftpquota",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.ftpquota",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".gitattributes",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.gitattributes",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": ".htaccess",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.htaccess",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": true
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": " filtered-node"
+                        },
+                        "a_attr": {
+                            "title": "This file is filtered."
+                        }
+                    },
+                    {
+                        "text": ".htaccess06152019",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/.htaccess06152019",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "error_log",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/error_log",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "index.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/index.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "license.txt",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/license.txt",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "readme.html",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/readme.html",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-activate.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-activate.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-blog-header.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-blog-header.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-comments-post.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-comments-post.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-config-sample.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-config-sample.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-config.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-config.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": true
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": " filtered-node"
+                        },
+                        "a_attr": {
+                            "title": "This file is filtered."
+                        }
+                    },
+                    {
+                        "text": "wp-cron.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-cron.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-links-opml.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-links-opml.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-load.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-load.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-login.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-login.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-mail.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-mail.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-settings.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-settings.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-signup.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-signup.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "wp-trackback.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/wp-trackback.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    },
+                    {
+                        "text": "xmlrpc.php",
+                        "fullPath": "\/home2\/frontendmike\/public_html\/xmlrpc.php",
+                        "type": "file",
+                        "state": {
+                            "opened": false,
+                            "disabled": false,
+                            "selected": false,
+                            "checked": false,
+                            "checkbox_disabled": false
+                        },
+                        "children": null,
+                        "li_attr": {
+                            "class": ""
+                        },
+                        "a_attr": []
+                    }
+                ],
+                "li_attr": {
+                    "class": " root-node core-node"
+                },
+                "a_attr": {
+                    "title": "Core WordPress directories should not be filtered. Use caution when excluding files."
+                }
+            }
+        },
+        "Status": {
+            "Size": "Good",
+            "Names": "Good",
+            "Big": "Good",
+            "AddonSites": "Good",
+            "UnreadableItems": "Good"
+        },
+        "RecursiveLinks": [],
+        "UnreadableItems": []
+    },
+    "DB": {
+        "Status": {
+            "Success": true,
+            "Size": "Good",
+            "Rows": "Good"
+        },
+        "Size": "2.02MB",
+        "Rows": "513",
+        "TableCount": 14,
+        "TableList": {
+            "wp_commentmeta": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_comments": {
+                "Case": 0,
+                "Rows": "1",
+                "Size": "96KB",
+                "USize": 98304
+            },
+            "wp_duplicator_pro_entities": {
+                "Case": 0,
+                "Rows": "5",
+                "Size": "12.85KB",
+                "USize": 13156
+            },
+            "wp_duplicator_pro_packages": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "43.5KB",
+                "USize": 44540
+            },
+            "wp_links": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_options": {
+                "Case": 0,
+                "Rows": "154",
+                "Size": "1.06MB",
+                "USize": 1114112
+            },
+            "wp_postmeta": {
+                "Case": 0,
+                "Rows": "179",
+                "Size": "112KB",
+                "USize": 114688
+            },
+            "wp_posts": {
+                "Case": 0,
+                "Rows": "127",
+                "Size": "352KB",
+                "USize": 360448
+            },
+            "wp_term_relationships": {
+                "Case": 0,
+                "Rows": "12",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_term_taxonomy": {
+                "Case": 0,
+                "Rows": "5",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_termmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_terms": {
+                "Case": 0,
+                "Rows": "5",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_usermeta": {
+                "Case": 0,
+                "Rows": "23",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_users": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            }
+        }
+    },
+    "Status": 1
+}
