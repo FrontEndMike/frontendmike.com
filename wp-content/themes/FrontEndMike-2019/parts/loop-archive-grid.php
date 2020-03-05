@@ -29,19 +29,14 @@ $grid_columns = 4; ?>
 				<section class="entry-content" itemprop="text">
 					<?php the_excerpt(); ?>
 					<p><?php the_date(); ?></p>	
-					<hr>
 				</section> <!-- end article section -->
 			</div>
-<!-- 			<div class="large-12 column read-more-button">
-				<a class="button" href="<?php the_permalink() ?>" rel="bookmark" alt="Read More button">
-					Read More
-				</a>
-			</div> -->
 							    							
 				</article> <!-- end article -->
 				
 			
 		</div>
+		<hr>
 
 <?php if( 0 === ( $wp_query->current_post + 1 )  % $grid_columns ||  ( $wp_query->current_post + 1 ) ===  $wp_query->post_count ): ?>
 
