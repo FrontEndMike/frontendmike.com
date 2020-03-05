@@ -48,6 +48,14 @@ p{
 	    border: 0;
 	}
 }
+.col{
+	display: flex;
+	flex-wrap: wrap;
+}
+.blog-panel {
+    margin-bottom: 2rem;
+    
+}
 
 .text-center{
 	text-align: center;
