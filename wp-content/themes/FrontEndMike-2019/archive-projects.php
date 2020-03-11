@@ -3,16 +3,10 @@
 get_header(); ?>
 			
 	<div class="content">
-		<?php if(has_post_thumbnail()) {
-		 $feat_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), "full", true);
-		} ?>
-		<div class="hero" style="background-image:url(<?= get_template_directory_uri(); ?>/assets/images/project-highlights.jpg);">
+		<div class="blog-hero">
 			<div class="row">
-				<div class="large-12 columns hero-text">
-					<hr class="orange">
-				
-					
-					
+				<div class="">
+					<h3>Recent Projects</h3>
 				</div>
 			</div>
 		</div>
@@ -20,13 +14,9 @@ get_header(); ?>
 		<div class="inner-content row">
 		
 		    <main class="main small-12 medium-12 large-12 column" role="main">
-			    
-		    	<header>
-		    		<h1 class="page-title">Recent Projects</h1>
-					<?php the_archive_description('');?>
-		    	</header>
+		    	<p class="" style="margin-top: 1rem;">This page is currently under construction. These are all of my recent projects in which I did 100% of the development on. They were all created using WordPress and the Foundation framework</p>
 
-				<div class="grid">
+				<div class="col">
 		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			 
 					<!-- To see additional archive styles, visit the /parts directory -->
