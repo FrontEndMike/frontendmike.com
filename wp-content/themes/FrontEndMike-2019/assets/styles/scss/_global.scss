@@ -306,7 +306,6 @@ HOME
 }
 
 .full-width{
-	padding: 8rem 2rem;
 	max-width: 50rem;
 	display: block;
 	margin: 0 auto;
@@ -320,7 +319,18 @@ FULL WIDTH
 }
 
 
-
+/*********************
+PROJECT
+*********************/
+.project-panel{
+	a{
+		display: block;
+		margin-top: 1rem;
+		font-weight: 300;
+		font-size: 1.25rem;
+		color: black;
+	}
+}
 
 /*********************
 BLOG
