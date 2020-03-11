@@ -1,22 +1,18 @@
 <?php
 /*
-Template Name: Full Width (No Sidebar)
+Template Name: Sidebar template
 */
 
 get_header(); ?>
 			
-	<div class="content ">
-		<div class="blog-hero">
-			<div class="row">
-				<div class="">
-					<h3><?php the_title(); ?></h3>
-				</div>
+	<div class="content full-width">
+	
+		<div class="inner-content row">
+			<div class="large-4 medium-4 small-12 column feat-image">
+				<?php the_post_thumbnail('full'); ?>
 			</div>
-		</div>
 	
-		<div class="inner-content full-width row">
-	
-		    <main class="main small-12 medium-12 large-12 column" role="main">
+		    <main class="main small-12 medium-8 large-8 column" role="main">
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
