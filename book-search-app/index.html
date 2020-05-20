@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<title>Book Search app</title>
+	<meta charset="UTF-8" />
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/3021fd835d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="search-contain" style="transition: 1s ease all;">
+	<h1 class="text-center">BSA</h1>
+	<p class="text-center">BSA (Book Search App) is a search engine used to search for books and return the top 10 results, 
+		It is built using <a href="https://getbootstrap.com/" target="_blank">Bootstrap </a>and the 
+		<a href="https://developers.google.com/books" target="_blank"> GoogleBooks api</a>. 
+	</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="input-group mb-3">
+					<input id="input" type="text" class="form-control" placeholder="Search books" aria-label="Search books" aria-describedby="basic-addon2">
+					<div class="input-group-append">
+					  <input class="btn btn-primary"  id="search" value="Search" type="button">
+					</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul id="app" class="list-group"></ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center">Book Search app by <a href="http://twitter.com/frontendmike" target="_blank">@FrontEndMike</a></p>
+			</div>
+		</div>
+	</footer>
+	
+	
+
+	<script src="googlebooks_api.js"></script>
+</body>
+
+</html>

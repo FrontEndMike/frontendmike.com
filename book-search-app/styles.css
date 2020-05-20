@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+/* h1,h2,h3,h4,h5,h6{
+    font-family: 'BioRhyme', serif;
+}
+p{
+    font-family: 'Space Mono', monospace;
+} */
+body.search-contain{
+    max-width: 45rem;
+    margin: 0 auto;
+    display: block;
+    padding: 2rem 1rem;
+    font-family: 'Saira', sans-serif;
+}
+#app{
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    min-height: 30vh;
+}
+#input{
+    border-radius: 25px 0px 0px 25px;
+}
+.book-image {
+    display: inline-block;
+    max-width: 10rem;
+    padding: 1rem;
+}
+.book-image img{
+    width: 100%;
+}
+.book-info {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 25rem;
+    width: 100%;
+    padding: 1rem;
+}
+.description-btn{
+    display: inline-block;
+}
+.card.card-body {
+    border: 0px;
+    padding: 0rem;
+}
+footer{
+    margin-top: 4rem;
+}
+.text-center{
+    text-align: center;
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .fa-search {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.right-addon .fa-search { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
