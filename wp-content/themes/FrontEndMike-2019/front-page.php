@@ -11,7 +11,8 @@ get_header(); ?>
 		<div id="landing" class="hero">
 			<div class="row">
 				<div class="large-12 columns text-center">
-					<?php the_field('hero_text'); ?>
+					<h2>HI, MY NAME IS MICHAEL & I AM A</h2>
+					<h1>FRONT END DEVELOPER</h1>
 				</div>
 			</div>
 		</div>
@@ -28,16 +29,42 @@ get_header(); ?>
                 </div>
                 <div class="large-8 columns">
                     <div class="about-panel">
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-					    	<?php get_template_part( 'parts/loop', 'page' ); ?>
-					    
-					    <?php endwhile; endif; ?>
+						<p>Hi, my name is Michael Jackson, I am a Front End Web Developer from Baton Rouge, La. I have been a professional developer since 2016. I enjoy using code in order to help businesses achieve their goals by creating beautiful responsive websites.</p>
+	                    <p>When I'm not working on websites I like to involve myself in the developer community in other ways. First, I along with fellow developer <a href="https://twitter.com/quintonjasonjr" class="link" target="_blank">Quinton Jason</a> created BR HackNight. A meet-up group for local web developers to gather and talk shop (see below for more details). Secondly, I am a Lead Instructor with <a href="https://www.thefuturesfund.org/" class="link" target="_blank">Futures Fund</a>. An organization created through the Walls Project to teach middle and high school students coding and photography. </p>
+	                <a href="/about" class="button btn-style">Learn More</a>
 
 
                     </div>
                 </div>
             </div>
+
+           <!--  <div class="info">
+	            <div class="row">
+		            <div class="large-12">
+		            	<h2 class="text-center">Recent Work</h2>
+		            </div>
+	            </div>
+	            <div class="row">
+		            <div class="large-4 columns">
+			            <figure>
+			            <img src="<?= get_template_directory_uri(); ?>/assets/images/placeholder-circle.png" alt="">
+			            <figcaption>Placeholder info</figcaption>
+			            </figure>
+		            </div>
+		            <div class="large-4 columns">
+			            <figure>
+			            <img src="<?= get_template_directory_uri(); ?>/assets/images/placeholder-circle.png" alt="">
+			            <figcaption>Placeholder info</figcaption>
+			            </figure>
+		            </div>
+		            <div class="large-4 columns">
+			            <figure>
+			            <img src="<?= get_template_directory_uri(); ?>/assets/images/placeholder-circle.png" alt="">
+			            <figcaption>Placeholder info</figcaption>
+			            </figure>
+		            </div>
+	            </div>
+            </div> -->
 		       
 		        
 		    </section>
@@ -50,16 +77,17 @@ get_header(); ?>
 				<div class="row">
 					<div class="large-12 columns">
 		                <div class="body-copy-panel">
-		                	<?php the_field('body_copy'); ?>
+		                	   <p>Today (at the time of this writing) it is December 2, 2017, the date of our Future’s Fund  Student Showcase. I must say, seeing these young people on stage articulating their vision and the things that they’ve learned in their time with Future’s Fund is amazing and overwhelming. I’ve never taught students before joining the FF Instructor team. Seeing MY students that I’ve spent several saturdays instructing standing tall and speaking with confidence was unbelievable. That feeling is worth more than money. To help the youth, to help the community and to have a hand in crafting the future generations is huge to me.</p>
 		           		</div>
+		           		<a href="#" class="button btn-style">Learn More</a>
 		        	</div>
 				</div>
 			</section>
 			<div id="before-hacknight">
-			    <?php the_field(''); ?>
+			    
 			</div>
 			<div id="hack-image">
-				<?php the_field(''); ?>
+				
 			</div>
 			<section id="hacknight">
 			    <!-- <img src="<?= get_template_directory_uri(); ?>/assets/images/hack_night.jpg" alt="BR Hacknight image"> -->
@@ -67,9 +95,13 @@ get_header(); ?>
 			        <div class="row">
 			            <div class="large-12 columns">
 			                <div class="body-copy-panel">
-			                	<?php the_field('hack_night_copy'); ?>
+			                	<p>The time has come! Baton Rouge will now be having a monthly Meet Up for Web Developers at Louisiana Tech Park (<a href="www.latechpark.com/" target="_blank">www.latechpark.com/</a>) 7117 Florida Blvd, Baton Rouge, LA 70806 the last Wednesday of every month at 6 pm. </p>
+
+        	                  <p>This monthly event is for everyone: professionals, hobbyists and students alike. BR Hack Night isa place for people with a passion for the web to gather and work on ideas and projects in an environment with other creatives. Students are especially welcome to attend. With so many “How to Become a Web ____” resources online, it can be hard to chart the right course. Come and join us and talk to other web enthusiasts and gain some insights from your peers. </p>
+
+        	                  <p>The Baton Rouge Web community is large and continues to grow. We need more and more venues where we can get together and help it grow. Everyone is encouraged to bring a computer and get some work done. If you’re stuck, feel free to lean over and (politely) ask your neighbor for some assistance. Or you can just have a friendly chat and talk with others who share your interests in web. The goal of Hack Night is cooperation and community. Whether you’re a code ninja (or samurai or wizard) or a newbie who has never written a line of code, we want you to come and learn the joys of the Web.</p>
 			                </div>
-			   
+			   				<a href="https://www.facebook.com/groups/brhacknight/" class="button btn-style" target="_blank">Learn More</a>
 			            </div>
 			        
 			    </section>
