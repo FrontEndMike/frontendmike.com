@@ -13,6 +13,7 @@ get_header(); ?>
 				<div class="large-12 columns text-center">
 					<h2>HI, MY NAME IS MICHAEL & I AM A</h2>
 					<h1>FRONT END DEVELOPER</h1>
+					test
 				</div>
 			</div>
 		</div>
