@@ -4,6 +4,7 @@
 
 
 const SEARCH = document.getElementById("search");
+const FORM  = document.getElementById('search-form');
 let counter = 0;
 function createNode(element) {
 	return document.createElement(element);
@@ -15,7 +16,11 @@ function append(parent, el) {
 
 const ul = document.getElementById('app');
 
-
+function enterPress() {
+	if(event.keyCode == 13){
+		searchFunc();
+	}
+}
 
 function searchFunc() {
 	// Take in input value from html
@@ -49,7 +54,7 @@ function searchFunc() {
 								<img src="${book_img}"></a>
 							</div>
 							<div class="book-info">
-                            	<h3 class="title">${book_title} </h3>
+                            	<h2 class="title">${book_title} </h2>
 								<p class="aurthor"> Author : ${author_name} </p>
 								<a href="${book_link}" target="_blank" class="btn btn-primary">
 								<i class="fas fa-dollar-sign"></i> Purchase
@@ -79,5 +84,6 @@ function searchFunc() {
 });
 }
 
-
+// SEARCH.addEventListener("keyup", searchFunc);
+document.addEventListener("keyup", enterPress);
 SEARCH.addEventListener("click", searchFunc);
