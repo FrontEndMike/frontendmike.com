@@ -9,10 +9,19 @@ get_header(); ?>
 	
 	<div class="content home">
 		<div id="landing" class="hero">
-			<div class="row">
-				<div class="large-12 columns text-center">
-					<h2>HI, MY NAME IS MICHAEL & I AM A</h2>
-					<h1>FRONT END DEVELOPER</h1>
+			<div class="overlay">
+				<div class="header-contain">
+					<h1 class="text-center" style="color: white;">Hi, I'm Michael and I'm a</h1>
+					<div class="content-scroll">
+					  <div class="content-scroll__container">
+					    <ul class="content-scroll__container__list">
+					      <li class="content-scroll__container__list__item"><h1>developer</h1></li>
+					      <li class="content-scroll__container__list__item"><h1>blogger</h1></li>
+					      <li class="content-scroll__container__list__item"><h1>coder</h1></li>
+					      <li class="content-scroll__container__list__item"><h1>Lifter</h1></li>
+					    </ul>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
