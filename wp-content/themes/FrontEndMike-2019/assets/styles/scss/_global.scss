@@ -63,7 +63,9 @@ p{
 .text-center{
 	text-align: center;
 }
-
+.white {
+    transition: background-color 1.4s ease;
+}
 .page-title {
 	
 	// Remove Foundation vcard styling from author page titles
@@ -739,7 +741,66 @@ section#portfolio p{
 
 
 
+/*********************
+HAMBURGER MENU FUNCTIONALITY
+*********************/
+.inactive{
+	.hamburger--spin .hamburger-inner {
+	    transition-duration: 0.22s;
+	    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	}
+	.off-canvas-content {
+	    transform: none;
+	    transition: transform .5s ease;
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	}
+}
 
+.is-open-right{
+	#top-bar-menu{
+			transform: none;
+			transition: transform .5s ease;
+		   transform: translateX(-250px);
+	}
+	
+}
+#top-bar-menu{
+	transform: translateX(0px);
+		transition: transform .5s ease;
+	   z-index: 11;
+}
+.off-canvas-content.is-open-right.has-transition-push {
+    transform: none;
+}
+.js-off-canvas-overlay.is-overlay-fixed {
+    display: none !important;
+}
+.off-canvas{
+	margin-top: 0rem;
+}
+#ham{
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+	    background-color: $gray;
+	}
+}
+
+
+
+#top-bar-menu-interior{
+	transform: translateX(0px);
+		transition: transform .5s ease;
+	   z-index: 11;
+}
+#ham-interior{
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+	    background-color: $gray;
+	}
+}
+.col{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 

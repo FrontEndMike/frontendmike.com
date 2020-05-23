@@ -17,3 +17,19 @@ jQuery(document).ready(function() {
 		}
 	});
 }); 
+
+function className(){
+	document.getElementById("ham-interior").classList.toggle('is-active');
+}
+document.querySelector("#ham-interior").addEventListener('click', className);
+
+
+
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        $(".topbar").addClass("white");
+    } 
+});

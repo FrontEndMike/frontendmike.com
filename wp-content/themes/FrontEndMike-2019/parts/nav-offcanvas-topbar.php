@@ -19,8 +19,13 @@
 	</div>
 	<div class="top-bar-right float-right show-for-small-only">
 		<ul class="menu">
-			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-			<li><a data-toggle="off-canvas"><?php _e(  '' ); ?><img class="ham-menu" src="<?= get_template_directory_uri(); ?>/assets/images/ham-menu.png" alt=""></a></li>
+			<a data-toggle="off-canvas">
+			<button id="ham-interior" class="ham-menu hamburger--spin is-inactive" type="button">
+				<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+				</span>
+			</button> 
+			</a>
 		</ul>
 	</div>
 </div>
