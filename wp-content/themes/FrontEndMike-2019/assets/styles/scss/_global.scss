@@ -307,6 +307,7 @@ HOME
 	margin-bottom: 3rem;
 }*/
 .hero{
+	margin-bottom: 3rem;
 	h2{
 		margin-bottom: 1rem;
 	}
@@ -322,12 +323,26 @@ HOME
 	}
 }
 #landing{
-	background: url(../images/dojo.jpg);
-	background-size: cover;
-	background-position: center center;
 	&.hero{
 		position: relative;
+		background: url(../images/dojo.jpg);
+		background-size: cover !important;
+		background-position: center center !important;
 	}
+}
+#landing.blogs{
+	background: url(../images/futures-fund-blog.jpg);
+}
+
+#landing.blog-single{
+	background: url(../images/futures-fund-blog.jpg);
+}
+
+#landing.projects{
+	background: url(../images/hacknight_group.jpg);
+}
+#landing.project-single{
+	background: url(../images/code-hero.jpg);
 }
 .overlay{
 	padding: 10rem;
@@ -340,7 +355,7 @@ HOME
 	z-index: 1;
 	min-height: 20rem;
 	@include breakpoint(small down){
-		padding: 6rem 3rem;
+		padding: 6rem 1rem;
 	}
 }
 .info{
@@ -398,7 +413,7 @@ BLOG
 }
 .single{
 	.content{
-		padding: 8rem 2rem;
+		padding: 0rem 2rem;
 		max-width: 50rem;
 		display: block;
 		margin: 0 auto;
@@ -462,9 +477,7 @@ BLOG
 		}
 	}
 }
-.blog-single{
-	margin-bottom: 3rem;
-}
+
 .recent-blog,.recent-feed-blog{
 	padding: 3rem 0rem;
 	img{
@@ -638,7 +651,9 @@ section#portfolio p{
     height: 3rem;
     padding: 0 40px;
     @include breakpoint(small down){
-    	height: 2rem;
+		height: 2rem;
+		margin-top: 0.5rem;
+		padding: 0rem;
     }
 
     &:before {

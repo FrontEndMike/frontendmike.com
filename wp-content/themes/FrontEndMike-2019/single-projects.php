@@ -1,6 +1,17 @@
 <?php 
 
 get_header(); ?>
+<div id="landing" class="hero project-single">
+	<div class="overlay">
+		<div class="header-contain">
+			<div class="content-scroll">
+				<div class="content-scroll__container">
+				<h1 class="text-center">Recent Projects</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 			
 <div class="content">
 	<div class="row">

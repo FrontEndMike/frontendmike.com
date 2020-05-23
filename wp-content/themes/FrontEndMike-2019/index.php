@@ -8,15 +8,19 @@
  */
 
 get_header(); ?>
-			
-	<div class="content">
-		<div class="blog-hero">
-			<div class="row">
-				<div class="">
-					<h3>Recent Blogs</h3>
+		<div id="landing" class="hero blogs">
+			<div class="overlay">
+				<div class="header-contain">
+					<div class="content-scroll">
+					  <div class="content-scroll__container">
+					  <h1 class="text-center">Recent Blogs</h1>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
+			
+	<div class="content">
 	
 		<div class="inner-content row">
 	
