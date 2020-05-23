@@ -63,8 +63,9 @@ p{
 .text-center{
 	text-align: center;
 }
-.white {
-    transition: background-color 1.4s ease;
+
+.top-bar, .top-bar ul {
+    background-color: transparent;
 }
 .page-title {
 	
@@ -182,10 +183,25 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /*********************
 HEADER
 *********************/
+.white {
+	background: rgba(0, 0, 0, 0.8) !important;
+	transition: .5s ease !important;
+	// a{
+	// 	color: black !important;
+	// }
+	// .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+	// 	background-color: black !important;
+	// }
+}
 #top-bar-menu{
 	padding: 0.75rem 0rem;
+	background-color: transparent;
+	transition: .5s ease !important;
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		background-color: white;
+	}
 	a{
-		color: black;
+		color: white;
 		letter-spacing: 1px;
 		padding: .4rem 0rem;
 		margin: 0rem 1rem;
@@ -195,16 +211,15 @@ HEADER
 		background-color: transparent;
 	}
 	&.top-bar{
-		background-color: white;
 		position: fixed;
 		width: 100%;
 		@include breakpoint(small down) {
-			padding: 0rem;
+			padding: 0.5rem;
 		}
 	}
-	.menu{
-		background-color: white;
-	}
+	// .menu{
+	// 	background-color: white;
+	// }
 }
 .header{
 .top-bar-left,
@@ -228,6 +243,24 @@ HEADER
 }
 img.ham-menu {
     max-width: 2.5rem;
+}
+
+.off-canvas {
+	background: black;
+	a{
+		color: white;
+
+	}
+	li.active a{
+		color: $blue;
+		background-color: transparent;
+	}
+}
+.off-canvas.is-transition-push {
+    z-index: 11;
+}
+.position-top {
+    padding-top: 4rem;
 }
 /*********************
 FOOTER
@@ -767,8 +800,8 @@ HAMBURGER MENU FUNCTIONALITY
 }
 #top-bar-menu{
 	transform: translateX(0px);
-		transition: transform .5s ease;
-	   z-index: 11;
+	transition: transform .5s ease;
+	z-index: 11;
 }
 .off-canvas-content.is-open-right.has-transition-push {
     transform: none;
@@ -779,11 +812,7 @@ HAMBURGER MENU FUNCTIONALITY
 .off-canvas{
 	margin-top: 0rem;
 }
-#ham{
-	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-	    background-color: $gray;
-	}
-}
+
 
 
 
@@ -792,11 +821,7 @@ HAMBURGER MENU FUNCTIONALITY
 		transition: transform .5s ease;
 	   z-index: 11;
 }
-#ham-interior{
-	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-	    background-color: $gray;
-	}
-}
+
 .col{
 	display: flex;
 	flex-wrap: wrap;
