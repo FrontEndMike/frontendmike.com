@@ -10,9 +10,7 @@
 </div> -->
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
-		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>">@FrontEndMike</a></li>
-		</ul>
+		<a href="<?php echo home_url(); ?>">@FrontEndMike</a>
 	</div>
 	<div class="top-bar-right show-for-medium">
 		<?php joints_top_nav(); ?>	
@@ -29,3 +27,4 @@
 		</ul>
 	</div>
 </div>
+
