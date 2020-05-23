@@ -24,12 +24,25 @@ function className(){
 document.querySelector("#ham-interior").addEventListener('click', className);
 
 
+//use window.scrollY
+var scrollpos = window.scrollY;
+var header = document.getElementById("top-bar-menu");
 
+function add_class_on_scroll() {
+    header.classList.add("white");
+}
 
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
+function remove_class_on_scroll() {
+    header.classList.remove("white");
+}
 
-    if (scroll >= 10) {
-        $(".topbar").addClass("white");
-    } 
+window.addEventListener('scroll', function(){ 
+    scrollpos = window.scrollY;
+
+    if(scrollpos > 10){
+        add_class_on_scroll();
+    }
+    else {
+        remove_class_on_scroll();
+    }
 });
