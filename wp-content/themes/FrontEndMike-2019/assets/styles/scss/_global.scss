@@ -52,8 +52,9 @@ p{
 	}
 }
 .col{
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
+	width: 100%;
 }
 .blog-panel {
     margin-bottom: 2rem;
@@ -388,8 +389,28 @@ FULL WIDTH
 /*********************
 PROJECT
 *********************/
+.project-grid{
+	padding: 4rem 0rem;
+	min-height: 40rem;
+}
 .project-panel{
-	a{
+	border-radius: 25px;
+    border: 1px solid #000;
+    margin-top: 0;
+    margin-left: 0;
+    transition: all .2s ease;
+	padding: 1rem;
+	min-height: 19rem;
+	max-width: 25rem;
+	margin-bottom: 2rem;
+	&:hover {
+		border: 1px solid #000;
+		margin-left: .5rem;
+		margin-top: -.5rem;
+		transition: all .2s ease;
+		box-shadow: -10px 10px 4px 0px #ccc;
+	}
+	h2{
 		display: block;
 		margin-top: 1rem;
 		font-weight: 300;

@@ -6,7 +6,7 @@ get_header(); ?>
 		<div class="header-contain">
 			<div class="content-scroll">
 				<div class="content-scroll__container">
-				<h1 class="text-center">Recent Projects</h1>
+				<h1 class="text-center"><?php the_title(); ?></h1>
 				</div>
 			</div>
 		</div>
@@ -14,10 +14,10 @@ get_header(); ?>
 </div>
 			
 <div class="content">
-	<div class="row">
+	<!-- <div class="row">
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 	</div>
-	
+	 -->
 	<div class="inner-content row">
 		<div class="blog-single large-12 medium-12 small-12 columns">
 			<div class="">
