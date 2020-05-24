@@ -35,6 +35,26 @@ h3{
 p{
 	font-family: $Open;
 }
+button{
+	padding: .75rem 1rem;
+    border: 2px solid;
+    font-weight: 700;
+    color: $blue;
+    margin-right: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 25px;
+	cursor: pointer;
+	&:hover{
+		background-color: $blue;
+		border-color: $blue;
+		color: white;
+	}
+	&.active-cat{
+		background-color: $blue;
+		border-color: $blue;
+		color: white;
+	}
+}
 .button,.btn{
 	border: 0;
 	border-radius: 0px;
@@ -222,6 +242,9 @@ HEADER
 	// 	background-color: white;
 	// }
 }
+#ham-interior{
+	background-color: $blue;
+}
 .header{
 .top-bar-left,
     .top-bar-right {
@@ -389,33 +412,43 @@ FULL WIDTH
 /*********************
 PROJECT
 *********************/
+.panel{
+	min-height: 22rem;
+}
 .project-grid{
 	padding: 4rem 0rem;
 	min-height: 40rem;
 }
 .project-panel{
 	border-radius: 25px;
-    border: 1px solid #000;
-    margin-top: 0;
-    margin-left: 0;
+    border: 1px solid $blue;
+	margin-left: .5rem;
+	margin-top: -.5rem;
     transition: all .2s ease;
 	padding: 1rem;
 	min-height: 19rem;
 	max-width: 25rem;
 	margin-bottom: 2rem;
+	background-color: rgba(2, 189, 213, 0.7);
+	box-shadow: -10px 10px 4px 0px #ccc;
+	img{
+		border-radius: 15px;
+	}
 	&:hover {
-		border: 1px solid #000;
-		margin-left: .5rem;
-		margin-top: -.5rem;
+		margin-top: 0;
+		margin-left: 0;
+		min-height: 19rem;
+		max-width: 25rem;
 		transition: all .2s ease;
-		box-shadow: -10px 10px 4px 0px #ccc;
+		box-shadow: 0px 0px 0px 0px #ccc;
 	}
 	h2{
 		display: block;
 		margin-top: 1rem;
 		font-weight: 300;
 		font-size: 1.25rem;
-		color: black;
+		text-transform: capitalize;
+		color: white;
 	}
 }
 
