@@ -50,7 +50,7 @@ function searchFunc() {
 			li = createNode('li')
 			li.setAttribute("class", "list-group-item");
 			li.innerHTML = `<div class="book-image">
-								<a href="${book_link}" target="_blank">
+								<a href="${book_img}" target="_blank">
 								<img src="${book_img}"></a>
 							</div>
 							<div class="book-info">
@@ -75,12 +75,19 @@ function searchFunc() {
 								</div>
 							</div>
 							`;
+			// console.log(book_list);
 			counter++;
 			append(ul, li);
         }) 
 	})
 	.catch(error => {
-		console.log(error);
+		error = createNode('li')
+			error.setAttribute("class", "list-group-item");
+			error.innerHTML = `<div>
+								<p>Sorry there are no results. Try a different search</p>
+							</div>
+							`;
+		append(ul, error);
 });
 }
 
