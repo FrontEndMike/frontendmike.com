@@ -84,7 +84,7 @@ function searchFunc() {
 		error = createNode('li')
 			error.setAttribute("class", "list-group-item");
 			error.innerHTML = `<div>
-								<p>Sorry there are no results. Try a different search</p>
+								<span>Sorry there are no results. Try a different search</span>
 							</div>
 							`;
 		append(ul, error);
