@@ -17,7 +17,7 @@ function enterPress() {
 	}
 }
 
-const searchFunct = (async () => {
+async function searchFunc(){
 
     try{
         
@@ -29,8 +29,16 @@ const searchFunct = (async () => {
         const data = await res.json();
 
         document.getElementById("app").innerHTML = "";
-		let book_list = data.items.slice(0, 10); 
-		return book_list.map(function(new_list) {
+    } catch(error) {
+		error = createNode('li')
+			error.setAttribute("class", "list-group-item");
+			error.innerHTML = `<div>
+								<span>Sorry there are no results. Try a different search</span>
+							</div>
+							`;
+		append(ul, error);
+    } finally{
+        return book_list.map(function(new_list) {
 			let author_name = new_list.volumeInfo.authors;
             let book_title = new_list.volumeInfo.title;
             let book_link = new_list.volumeInfo.canonicalVolumeLink;
@@ -66,17 +74,12 @@ const searchFunct = (async () => {
 							`;
 			// console.log(book_list);
 			counter++;
-			append(ul, li);
-    } catch(error) {
-		error = createNode('li')
-			error.setAttribute("class", "list-group-item");
-			error.innerHTML = `<div>
-								<span>Sorry there are no results. Try a different search</span>
-							</div>
-							`;
-		append(ul, error);
-    }
-})();
+            append(ul, li);
+            
+        });
+    };
+
+}
 
 document.addEventListener("keyup", enterPress);
 SEARCH.addEventListener("click", searchFunc);
