@@ -1,4 +1,4 @@
-import greeting, { SEARCH_URL as SEARCH, SEARCH_QUERY } from "./consts";
+import greeting, { SEARCH_URL as SEARCH, SEARCH_QUERY } from "./consts.js";
 
 (async () => {
   try {

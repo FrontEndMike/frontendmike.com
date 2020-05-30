@@ -3,5 +3,3 @@ export const SEARCH_QUERY = "Javascript";
 
 const hello = "hi";
 export default hello;
-
-export  { SEARCH_URL };
