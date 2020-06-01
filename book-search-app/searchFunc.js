@@ -1,34 +1,26 @@
-// FETCH!
-// hit url and it returns some informtation
-// primary method is grab data from an api
 
-
-const SEARCH = document.getElementById("search");
-const FORM  = document.getElementById('search-form');
 let counter = 0;
-function createNode(element) {
-	return document.createElement(element);
-}
 
-function append(parent, el) {
-  return parent.appendChild(el);
-}
 
 const ul = document.getElementById('app');
 
-function enterPress() {
-	if(event.keyCode == 13){
-		searchFunc();
-	}
-}
+export function searchFunc() {
 
-function searchFunc() {
+	function createNode(element) {
+		return document.createElement(element);
+	}
+
+	function append(parent, el) {
+	return parent.appendChild(el);
+	}
 	// Take in input value from html
 	// Variables had to be declared within function to work
 	const SEARCH_QUERY = document.getElementById("input").value
 	const SEARCH_URL = "https://www.googleapis.com/books/v1/volumes?q="
     const API_URL = `${SEARCH_URL}${SEARCH_QUERY}`;
-    // const API_URL = `https://www.googleapis.com/books/v1/volumes?q=javascript`;
+    // FETCH!
+    // hit url and it returns some informtation
+    // primary method is grab data from an api
 	fetch(API_URL)
 	.then(res => {
 		return res.json();
@@ -91,7 +83,3 @@ function searchFunc() {
 		append(ul, error);
 });
 }
-
-// SEARCH.addEventListener("keyup", searchFunc);
-document.addEventListener("keyup", enterPress);
-SEARCH.addEventListener("click", searchFunc);
