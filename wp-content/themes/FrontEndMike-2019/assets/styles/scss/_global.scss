@@ -370,6 +370,16 @@ HOME
 #landing.project-single{
 	background: url(../images/code-hero.jpg);
 }
+.project-header img {
+    max-width: 33rem;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid black;
+	border-radius: 25px;
+    margin-bottom: 4rem;
+    box-shadow: -10px 10px 4px 0 #ccc;
+}
 .overlay{
 	padding: 10rem;
 	background-color: rgba(0, 0, 0, 0.8);
