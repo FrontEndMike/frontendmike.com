@@ -245,6 +245,7 @@ HEADER
 #ham-interior{
 	background-color: $blue;
 	padding: .5rem;
+	margin: 0rem;
 }
 .header{
 .top-bar-left,
@@ -380,7 +381,7 @@ HOME
 	z-index: 1;
 	min-height: 20rem;
 	@include breakpoint(small down){
-		padding: 6rem 1rem;
+		padding: 8rem 1rem;
 	}
 }
 .info{
@@ -689,7 +690,7 @@ section#portfolio p{
 	margin: 0 auto;
 	@include breakpoint(small down){
     	height: 2rem;
-    	padding: 0rem 1.5rem;
+    	padding: 0rem 1rem;
     }
 }
 .content-scroll {

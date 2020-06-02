@@ -21,7 +21,7 @@ get_header(); ?>
 	<div class="inner-content row">
 		<div class="blog-single large-12 medium-12 small-12 columns">
 			<div class="">
-				<div class="">
+				<div class="project-header">
 					<?php the_post_thumbnail('full'); ?>
 				</div>
 			</div>
@@ -45,7 +45,6 @@ get_header(); ?>
 			
 		</main> <!-- end #main -->
 
-		<h4>Technologies Used : </h4>
 
 			
 
@@ -57,7 +56,7 @@ get_header(); ?>
 
 	</div> <!-- end #inner-content -->
 
-	<a class="text-center" href="/projects">All Projects</a>
+	<a class="text-center btn" href="/projects">All Projects</a>
 
 </div> <!-- end #content -->
 
