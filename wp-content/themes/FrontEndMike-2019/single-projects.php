@@ -26,24 +26,41 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+</div>
 
-		<main class="main small-12 medium-12 large-12 column" role="main">
+		<div class="button-contain">
+			<div class="row">
+				<div class="large-6 medium-6 small-6 columns">
+					<a class="btn" href="<?php the_field('github_link'); ?>" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github"></i> Github
+					</a>
+				</div>
+				<div class="large-6 medium-6 small-6 columns">
+					<a class="btn" href="<?php the_field('project_link'); ?>" target="_blank" rel="noopener noreferrer">
+						View Here
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<main class="main small-12 medium-12 large-12 column" role="main">
+			
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
-		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<?php get_template_part( 'parts/loop', 'single' ); ?>
+				
+			<?php endwhile; else : ?>
 		
-		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
-		    	
-		    <?php endwhile; else : ?>
-		
-		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
+				<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-		    <?php endif; ?>
+			<?php endif; ?>
 
-		    	<hr>
+				<hr>
 
 			
-			
-		</main> <!-- end #main -->
+				
+			</main> <!-- end #main -->
+		</div>
 
 
 			
@@ -51,10 +68,6 @@ get_header(); ?>
 		
 
 		
-
-		
-
-	</div> <!-- end #inner-content -->
 
 	<a class="text-center btn" href="/projects">All Projects</a>
 
