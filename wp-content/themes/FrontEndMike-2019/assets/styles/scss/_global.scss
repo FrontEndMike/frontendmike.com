@@ -70,11 +70,18 @@ i.fab.fa-github {
 	font-size: .9rem;
 	padding: .85em 1em;
 	border-radius: 25px;
+	text-align: center;
 	&:hover {
 	    color: white;
 	    background-color: $blue;
 	    border: 0;
 	}
+}
+.button-contain{
+	max-width: 18rem;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0rem;
 }
 .col{
 	display: inline-flex;
@@ -382,7 +389,7 @@ HOME
     display: block;
     border: 1px solid black;
 	border-radius: 25px;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     box-shadow: -10px 10px 4px 0 #ccc;
 }
 .overlay{
