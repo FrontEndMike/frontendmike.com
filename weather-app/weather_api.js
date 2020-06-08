@@ -1,4 +1,3 @@
-
 function fetchLocal() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
@@ -43,10 +42,14 @@ function fetchLocal() {
                 }
                 let sunriseTime = sunRiseSunSet(sunrise);
                 let sunsetTime = sunRiseSunSet(sunset);
-
-                const p = document.getElementById("weather");
+                
+                
+                let weatherIcon = document.createElement("img");
+                weatherIcon.src = icon_url;
+                document.getElementById("icon").appendChild(weatherIcon);
+                
+                const p = document.getElementById("info");
                 p.innerHTML = `
-                <div class="icon" style="height: 10rem; min-width: 10rem; background-image: url(http://openweathermap.org/img/wn/${icon}@2x.png);"></div>
                 <p> City : ${city} </p>
                 <p> Temp : ${fahrenheit}˚</p>
                 <p> Description : ${description}</p>
