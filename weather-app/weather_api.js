@@ -46,7 +46,7 @@ function fetchLocal() {
 
                 const p = document.getElementById("weather");
                 p.innerHTML = `
-                <img src="night_half_moon_clear.png">
+                <div class="icon" style="height: 10rem; min-width: 10rem; background-image: url(http://openweathermap.org/img/wn/${icon}@2x.png);"></div>
                 <p> City : ${city} </p>
                 <p> Temp : ${fahrenheit}˚</p>
                 <p> Description : ${description}</p>
