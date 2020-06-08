@@ -6,9 +6,11 @@
     border-radius: 20px;
     margin: 0 auto;
     padding: 1rem;
+    margin-top: 2rem;
 }
 img{
     display: block;
-    max-width: 7rem;
+    max-width: 10rem;
+    min-width: 10rem;
     margin: 0 auto;
 }
