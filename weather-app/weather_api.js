@@ -22,7 +22,7 @@ function fetchLocal() {
                 let sunrise = data.sys.sunrise;
                 let sunset = data.sys.sunset;
                 let icon = data.weather[0].icon;
-                let icon_url = `http://openweathermap.org/img/wn/${icon}.png`;
+                let icon_url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
                 // Convert sunrise/sunset data into standard time format
                 function sunRiseSunSet(time){
                     const RiseSet = new Date(time * 1000);
