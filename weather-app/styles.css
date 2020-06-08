@@ -1,0 +1,14 @@
+#weather{
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 20rem;;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+img{
+    display: block;
+    max-width: 7rem;
+    margin: 0 auto;
+}
