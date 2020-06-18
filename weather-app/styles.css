@@ -1,23 +1,26 @@
-h1{
-    text-align: center;
+body{
+    background-color:#00a6cc !important;
 }
-h2{
+.app-title h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.app-title h2{
     text-align: center;
     font-size: 1.5rem;
 }
 .app-title{
     max-width: 20rem;
     display: block;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 .weather-container {
     width: 100%;
     max-width: 20rem;
     background-color: aliceblue;
-    border-radius: 20px;
-    border: 1px solid black;
+    border-radius: 15px;
     display: block;
-    margin: 0 auto;
+    margin: 3rem auto;
     padding: 1rem;
     text-align: center;
 }
