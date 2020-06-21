@@ -10,7 +10,7 @@ const notificationElement = document.querySelector(".notification");
 const weather = {};
 
 weather.temperature = {
-    unit : "celsius"
+    unit : "farenheit"
 }
 
 // APP CONST AND VARS
@@ -64,8 +64,11 @@ function getWeather(latitude, longitude){
 
 // DISPLAY WEATHER TO UI
 function displayWeather(){
+    let farenheit = celsiusToFarenheit(weather.temperature.value);
+    farenheit = Math.floor(farenheit);
+
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}˚<span>C</span>`;
+    tempElement.innerHTML = `${farenheit}˚<span>F</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
@@ -75,3 +78,15 @@ function celsiusToFarenheit(temperature){
     return (temperature * 9/5) + 32;
 }
 
+// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
+// tempElement.addEventListener("click", function(){
+//     if(weather.temperature.value === undefined) return;
+
+//     if(weather.temperature.unit == "farenheit"){
+//         weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+
+//         tempElement.innerHTML = `${weather.temperature.value}˚<span>C</span>`;
+//     }else{
+
+//     }
+// })
