@@ -1,9 +1,22 @@
 body{
-    background-color:#00a6cc !important;
+    background-color:#52a0ff !important;
 }
-.app-title h1{
-    text-align: center;
-    font-size: 1.75rem;
+h1.location{
+    text-align: left;
+    font-size: 1.5rem;
+}
+.date,.description{
+    float: left;
+}
+p.time{
+    display: block;
+}
+.info{
+    height: 1.5rem;
+}
+.weather-icon img{
+    display: inherit;
+    max-width: 6rem;
 }
 .app-title h2{
     text-align: center;
@@ -14,6 +27,23 @@ body{
     display: block;
     margin: 0 auto;
     color: white;
+}
+.info-1,.info-2,.info-3{
+    border-radius: 15px;
+    min-height: 6rem;
+    padding-top: 1rem;;
+}
+.info-1{
+    background-color: #fed040;
+}
+.info-2{
+    background-color: #3388ff;
+}
+.info-3{
+    background-color: #5beba5;
+}
+.additional-info .col-sm-4{
+    padding: 0.25rem;
 }
 .weather-container {
     width: 100%;
@@ -27,13 +57,17 @@ body{
     box-shadow: 0px 5px 30px 0 #000;
 }
 .temperature-value p{
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 6rem;
+    line-height: 1;
+    text-align: right;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
 }
 .temperature-value p span{
     font-size: 1.5rem;
 }
 
-.temperature-description p{
+.description{
     text-transform: capitalize;
+    margin-left: 0.25rem;
 }

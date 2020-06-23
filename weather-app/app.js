@@ -2,7 +2,7 @@
 
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
-const descElement = document.querySelector(".temperature-description p");
+const descElement = document.querySelector(".description");
 const dateElement = document.querySelector(".date");
 const timeElement = document.querySelector(".time");
 const locationElement = document.querySelector(".location");
@@ -56,7 +56,6 @@ function getDate(latitude, longitude){
         })
         .then(function(data){
             time.currentTime = data.time_12;
-            console.log(data);
         })
         .then(function(){
             displayTime();
@@ -70,8 +69,8 @@ function displayTime(){
         month : 'short',
         year : 'numeric'
     })
-    dateElement.innerHTML = today;
-    timeElement.innerHTML = time.currentTime;
+    dateElement.innerHTML = `${today} |`;
+    // timeElement.innerHTML = time.currentTime;
 }
 
 
@@ -90,6 +89,7 @@ function getWeather(latitude, longitude){
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
+            console.log(data);
         })
         .then(function(){
             displayWeather();
@@ -102,9 +102,9 @@ function displayWeather(){
     farenheit = Math.floor(farenheit);
 
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${farenheit}˚<span>F</span>`;
+    tempElement.innerHTML = `${farenheit}˚`;
     descElement.innerHTML = weather.description;
-    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    locationElement.innerHTML = weather.city;
 }
 
 // C to F conversion
