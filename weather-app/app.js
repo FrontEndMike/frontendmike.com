@@ -3,11 +3,14 @@
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
+const dateElement = document.querySelector(".date");
+const timeElement = document.querySelector(".time");
 const locationElement = document.querySelector(".location");
 const notificationElement = document.querySelector(".notification");
 
 // App data
 const weather = {};
+const time = {};
 
 weather.temperature = {
     unit : "farenheit"
@@ -17,13 +20,14 @@ weather.temperature = {
 const KELVIN = 273;
 // API KEY
 const key = "83184effd69d73b717850778bd2dc7c4";
+const dateKey = "d228c193e6774244a40547d8a5d87e77";
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
 }else{
     notificationElement.style.display = "block";
-    notificationElement.innerHTML = "<p> Browser doesnt support geolocation</p>";
+    notificationElement.innerHTML = "<p>Refresh browser and share location information.</p>";
 }
 
 
@@ -33,6 +37,7 @@ function setPosition(position){
     let longitude = position.coords.longitude;
 
     getWeather(latitude, longitude);
+    getDate(latitude, longitude);
 }
 
 // SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
@@ -40,6 +45,35 @@ function showError(error){
     notificationElement.style.display = "block";
     notificationElement.innerHTML = `<p>${error.message}</p>`
 }
+
+// GET DATE
+function getDate(latitude, longitude){
+    let dateAPI = `https://api.ipgeolocation.io/timezone?apiKey=${dateKey}&lat=${latitude}&long=${longitude}`;
+    fetch(dateAPI)
+        .then(function(response){
+            let data = response.json();
+            return data;
+        })
+        .then(function(data){
+            time.currentTime = data.time_12;
+            console.log(data);
+        })
+        .then(function(){
+            displayTime();
+        });
+
+}
+// DISPLAY TIME FROM API
+function displayTime(){
+    var today = new Date().toLocaleDateString('en-US', {  
+        day : 'numeric',
+        month : 'short',
+        year : 'numeric'
+    })
+    dateElement.innerHTML = today;
+    timeElement.innerHTML = time.currentTime;
+}
+
 
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
