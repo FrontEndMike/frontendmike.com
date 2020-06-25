@@ -102,7 +102,7 @@ function displayWeather(){
     farenheit = Math.floor(farenheit);
 
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${farenheit}˚`;
+    tempElement.innerHTML = farenheit;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = weather.city;
 }

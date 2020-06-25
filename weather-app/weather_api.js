@@ -44,8 +44,7 @@ function fetchLocal() {
                 let sunsetTime = sunRiseSunSet(sunset);
                 
                 
-                let weatherIcon = document.createElement("img");
-                weatherIcon.src = icon_url;
+                let weatherIcon = `<img src="icons/${icon}.png"/>`;
                 document.getElementById("icon").appendChild(weatherIcon);
                 
                 const p = document.getElementById("info");
