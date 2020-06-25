@@ -36,11 +36,32 @@ p.time{
 .info-1{
     background-color: #fed040;
 }
+.info-1 p{
+    position: relative;
+    font-size: 2rem;
+}
+.info-1 p::after{
+    content: "˚";
+    position: absolute;
+}
 .info-2{
     background-color: #3388ff;
 }
+.info-2 p{
+    position: relative;
+    font-size: 2rem;
+}
+.info-2 p::after{
+    content: "%";
+    position: absolute;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
 .info-3{
     background-color: #5beba5;
+}
+.info-3 strong{
+    display: inline;
 }
 .additional-info .col-4{
     padding: 0.25rem;
@@ -62,11 +83,12 @@ p.time{
     text-align: right;
     margin-bottom: 0rem;
     margin-top: 1rem;
+    position: relative;
 }
 .temperature-value p::after{
     content: "˚";
     position: absolute;
-    right: -1rem;
+    right: -2rem;
 }
 .temperature-value p span{
     font-size: 1.5rem;

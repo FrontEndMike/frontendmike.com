@@ -6,6 +6,8 @@ const descElement = document.querySelector(".description");
 const dateElement = document.querySelector(".date");
 const timeElement = document.querySelector(".time");
 const locationElement = document.querySelector(".location");
+const feelsLikeElement = document.querySelector(".info-1 p");
+const humidityElement = document.querySelector(".info-2 p");
 const notificationElement = document.querySelector(".notification");
 
 // App data
@@ -13,6 +15,9 @@ const weather = {};
 const time = {};
 
 weather.temperature = {
+    unit : "farenheit"
+}
+weather.feelsLike = {
     unit : "farenheit"
 }
 
@@ -85,10 +90,12 @@ function getWeather(latitude, longitude){
         })
         .then(function(data){
             weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+            weather.feelsLike.value = Math.floor(data.main.feels_like - KELVIN);
             weather.description = data.weather[0].description;
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
+            weather.humidity = data.main.humidity;
             console.log(data);
         })
         .then(function(){
@@ -101,26 +108,18 @@ function displayWeather(){
     let farenheit = celsiusToFarenheit(weather.temperature.value);
     farenheit = Math.floor(farenheit);
 
+    let feel = celsiusToFarenheit(weather.feelsLike.value);
+    feel = Math.floor(feel);
+
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = farenheit;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = weather.city;
+    feelsLikeElement.innerHTML = feel;
+    humidityElement.innerHTML = weather.humidity;
 }
 
 // C to F conversion
 function celsiusToFarenheit(temperature){
     return (temperature * 9/5) + 32;
 }
-
-// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
-// tempElement.addEventListener("click", function(){
-//     if(weather.temperature.value === undefined) return;
-
-//     if(weather.temperature.unit == "farenheit"){
-//         weather.temperature.value = Math.floor(data.main.temp - KELVIN);
-
-//         tempElement.innerHTML = `${weather.temperature.value}˚<span>C</span>`;
-//     }else{
-
-//     }
-// })
