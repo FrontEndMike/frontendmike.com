@@ -29,7 +29,7 @@ p.time{
 }
 .info-1,.info-2,.info-3{
     border-radius: 15px;
-    min-height: 6rem;
+    min-height: 7rem;
     padding-top: 1rem;
     color: black;
 }
@@ -73,7 +73,7 @@ p.time{
 }
 .additional-info .col-4{
     padding: 0.25rem;
-    height: 6.5rem;
+    height: 7.5rem;
 }
 .weather-container {
     width: 100%;
