@@ -32,7 +32,6 @@ p.time{
     min-height: 6rem;
     padding-top: 1rem;
     color: black;
-    min-height: 7rem;
 }
 .info-1{
     background-color: #fed040;
@@ -40,6 +39,7 @@ p.time{
 .info-1 p{
     position: relative;
     font-size: 2rem;
+    margin-bottom: 0rem;
 }
 .info-1 p::after{
     content: "˚";
@@ -52,6 +52,7 @@ p.time{
 .info-2 p{
     position: relative;
     font-size: 2rem;
+    margin-bottom: 0rem;
 }
 .info-2 p::after{
     content: "%";
@@ -72,6 +73,7 @@ p.time{
 }
 .additional-info .col-4{
     padding: 0.25rem;
+    height: 6.5rem;
 }
 .weather-container {
     width: 100%;
