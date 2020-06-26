@@ -80,7 +80,7 @@ p.time{
     border-radius: 15px;
     display: block;
     margin: 3rem auto;
-    padding: 1rem 1rem 0.25rem;
+    padding: 1rem 1rem 0rem;
     text-align: center;
     box-shadow: 0px 5px 30px 0 #000;
 }
