@@ -8,6 +8,8 @@ const timeElement = document.querySelector(".time");
 const locationElement = document.querySelector(".location");
 const feelsLikeElement = document.querySelector(".info-1 p");
 const humidityElement = document.querySelector(".info-2 p");
+const maxElement = document.querySelector(".max");
+const minElement = document.querySelector(".min");
 const notificationElement = document.querySelector(".notification");
 
 // App data
@@ -91,6 +93,8 @@ function getWeather(latitude, longitude){
         .then(function(data){
             weather.temperature.value = Math.floor(data.main.temp - KELVIN);
             weather.feelsLike.value = Math.floor(data.main.feels_like - KELVIN);
+            weather.tempMax = Math.floor(data.main.temp_max - KELVIN);
+            weather.tempMin = Math.floor(data.main.temp_min - KELVIN);
             weather.description = data.weather[0].description;
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
@@ -111,12 +115,20 @@ function displayWeather(){
     let feel = celsiusToFarenheit(weather.feelsLike.value);
     feel = Math.floor(feel);
 
+    let max = celsiusToFarenheit(weather.tempMax);
+    max = Math.floor(max);
+
+    let min = celsiusToFarenheit(weather.tempMin);
+    min = Math.floor(min);
+
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = farenheit;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = weather.city;
     feelsLikeElement.innerHTML = feel;
     humidityElement.innerHTML = weather.humidity;
+    maxElement.innerHTML = max;
+    minElement.innerHTML = min;
 }
 
 // C to F conversion

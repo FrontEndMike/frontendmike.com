@@ -32,6 +32,7 @@ p.time{
     min-height: 6rem;
     padding-top: 1rem;
     color: black;
+    min-height: 7rem;
 }
 .info-1{
     background-color: #fed040;
@@ -46,6 +47,7 @@ p.time{
 }
 .info-2{
     background-color: #3388ff;
+    color: white;
 }
 .info-2 p{
     position: relative;
@@ -56,12 +58,17 @@ p.time{
     position: absolute;
     font-size: 1.25rem;
     margin-top: 0.5rem;
+    margin-left: 0.25rem;
 }
 .info-3{
     background-color: #5beba5;
+    padding-top: 0.5rem;
 }
 .info-3 strong{
     display: inline;
+}
+.info-3 p{
+    margin-bottom: 0rem;
 }
 .additional-info .col-4{
     padding: 0.25rem;
@@ -73,7 +80,7 @@ p.time{
     border-radius: 15px;
     display: block;
     margin: 3rem auto;
-    padding: 1rem;
+    padding: 1rem 1rem 0.25rem;
     text-align: center;
     box-shadow: 0px 5px 30px 0 #000;
 }
@@ -97,4 +104,10 @@ p.time{
 .description{
     text-transform: capitalize;
     margin-left: 0.25rem;
+}
+p.max::after{
+    content: "˚";
+}
+p.min::after{
+    content: "˚";
 }
