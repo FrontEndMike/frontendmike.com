@@ -1,5 +1,11 @@
-body{
-    background-color:#52a0ff !important;
+body.light-theme {
+    background-color:#52a0ff ;
+}
+body.dark-theme {
+    background-color: #163d5f;
+}
+.light-theme,.dark-theme{
+    transition: all ease 0.5s;
 }
 h1.location{
     text-align: left;
@@ -32,10 +38,9 @@ p.time{
     min-height: 7rem;
     padding-top: 1rem;
     color: black;
+    transition: all ease 0.5s;
 }
-.info-1{
-    background-color: #fed040;
-}
+
 .info-1 p{
     position: relative;
     font-size: 2rem;
@@ -45,10 +50,7 @@ p.time{
     content: "˚";
     position: absolute;
 }
-.info-2{
-    background-color: #3388ff;
-    color: white;
-}
+
 .info-2 p{
     position: relative;
     font-size: 2rem;
@@ -62,7 +64,6 @@ p.time{
     margin-left: 0.25rem;
 }
 .info-3{
-    background-color: #5beba5;
     padding-top: 0.5rem;
 }
 .info-3 strong{
@@ -81,11 +82,23 @@ p.time{
     background-color: aliceblue;
     border-radius: 15px;
     display: block;
-    margin: 3rem auto;
+    margin: 3rem auto 2rem auto;
     padding: 1rem 1rem 0rem;
     text-align: center;
     box-shadow: 0px 5px 30px 0 #000;
 }
+.button-container{
+    max-width: 20rem;
+    margin: 0rem auto 2rem;
+}
+.button-container .btn{
+    max-width: 8rem;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    box-shadow: 0px 5px 5px 0 #000;
+}
+
 .temperature-value p{
     font-size: 6rem;
     line-height: 1;
@@ -98,6 +111,7 @@ p.time{
     content: "˚";
     position: absolute;
     right: -2rem;
+    top: 0;
 }
 .temperature-value p span{
     font-size: 1.5rem;
@@ -112,4 +126,29 @@ p.max::after{
 }
 p.min::after{
     content: "˚";
+}
+
+.light-theme .info-1{
+    background-color: #fed040;
+}
+.light-theme .info-3{
+    background-color: #5beba5;
+}
+.light-theme .info-2{
+    background-color: #3388ff;
+    color: white;
+}
+
+.dark-theme .info-1 {
+    background-color: #15897b;
+    color: white;
+}
+.dark-theme .info-2 {
+    background-color: #486184;
+    color: white;
+}
+.dark-theme .info-3 {
+    background-color: #631a1b;
+    padding-top: 0.5rem;
+    color: white;
 }

@@ -135,3 +135,19 @@ function displayWeather(){
 function celsiusToFarenheit(temperature){
     return (temperature * 9/5) + 32;
 }
+
+
+// TOGGLE THEMES
+function lightToggle() {
+    element = document.querySelector('.theme')
+    element.classList.remove("dark-theme");
+    element.classList.add('light-theme');
+}
+document.querySelector('.btn-light').addEventListener('click', lightToggle);
+
+function darkToggle() {
+    element = document.querySelector('.theme')
+    element.classList.remove("light-theme");
+    element.classList.add('dark-theme');
+}
+document.querySelector('.btn-dark').addEventListener('click', darkToggle);
