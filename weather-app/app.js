@@ -44,7 +44,6 @@ function setPosition(position){
     let longitude = position.coords.longitude;
 
     getWeather(latitude, longitude);
-    getDate(latitude, longitude);
 }
 
 // SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
@@ -53,22 +52,7 @@ function showError(error){
     notificationElement.innerHTML = `<p>${error.message}</p>`
 }
 
-// GET DATE
-function getDate(latitude, longitude){
-    let dateAPI = `https://api.ipgeolocation.io/timezone?apiKey=${dateKey}&lat=${latitude}&long=${longitude}`;
-    fetch(dateAPI)
-        .then(function(response){
-            let data = response.json();
-            return data;
-        })
-        .then(function(data){
-            time.currentTime = data.time_12;
-        })
-        .then(function(){
-            displayTime();
-        });
 
-}
 // DISPLAY TIME FROM API
 function displayTime(){
     var today = new Date().toLocaleDateString('en-US', {  
