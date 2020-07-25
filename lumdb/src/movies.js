@@ -19,4 +19,4 @@ Movie.propTypes = {
     title: PropTypes.string.isRequired,
     overview: PropTypes.string.isRequired,
   }).isRequired,
-}
+};
