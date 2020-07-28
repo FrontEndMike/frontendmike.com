@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Movie from './movies';
 
-class MoviesList extends Component {
+class moviesList extends Component {
     state = {
         movies: []
 }
@@ -27,4 +27,4 @@ async componentDidMount() {
   }
 }
 
-export default MoviesList;
+export default moviesList;

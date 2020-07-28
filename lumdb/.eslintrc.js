@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     // we only want single quotes
-    quotes: ['error', 'single'],
+    // quotes: ['error', 'single'],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 };
