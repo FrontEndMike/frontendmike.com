@@ -11,7 +11,6 @@ const Movie = ({ movie }) => (
       <img src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
     </Link>
     <h3>{movie.title}</h3>
-    <p>{movie.overview}</p>
   </div>
 );
 
