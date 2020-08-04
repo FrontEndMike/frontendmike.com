@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Movie from './movies';
 
 class moviesList extends Component {
@@ -20,11 +21,15 @@ async componentDidMount() {
     
 	render() {
     return (
-        <div>
+        <MovieGrid>
             {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} overview={movie.overview}/> )}
-        </div>
+        </MovieGrid>
     );
   }
 }
 
 export default moviesList;
+
+const MovieGrid = styled.div `
+	background: red;
+`;
