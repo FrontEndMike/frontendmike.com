@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-const POSTER_PATH = 'https://image.tmdb.org/t/p/original';
+const BACKDROP_PATH = 'https://image.tmdb.org/t/p/original';
+const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
 
 class movieDetail extends Component {
     state = {
@@ -20,12 +21,14 @@ async componentDidMount() {
 }
     
 	render() {
+    const { movie } = this.state;
     return (
       <div>
-          <img src={`${POSTER_PATH}${this.state.movie.backdrop_path}`} alt={this.state.movie.title} />
-          <h1>{this.state.movie.title}</h1>
-          <h3>{this.state.movie.release_date}</h3>
-          <p>{this.state.movie.overview}</p>
+          <img src={`${BACKDROP_PATH}${movie.backdrop_path}`} alt={movie.title} />
+          <img src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />>
+          <h1>{movie.title}</h1>
+          <h3>Release Date: {movie.release_date}</h3>
+          <p>Summary: {movie.overview}</p>
       </div>
     );
   }
