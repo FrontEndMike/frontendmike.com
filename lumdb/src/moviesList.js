@@ -31,5 +31,8 @@ async componentDidMount() {
 export default moviesList;
 
 const MovieGrid = styled.div `
-	background: red;
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: repeat(5, 1fr);
+	grid-row-gap: 1rem;
 `;
