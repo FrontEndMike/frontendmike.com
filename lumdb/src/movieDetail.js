@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Poster } from './movies.js';
+import Overdrive from 'react-overdrive';
 
 const BACKDROP_PATH = 'http://image.tmdb.org/t/p/w1280';
 const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
@@ -27,7 +28,9 @@ async componentDidMount() {
     return (
       <MovieWrapper backdrop={`${BACKDROP_PATH}${movie.backdrop_path}`}>
         <MovieInfo>
-        <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
+        <Overdrive id={movie.id}>
+          <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
+        </Overdrive>
           <div>
             <h1>{movie.title}</h1>
             <h3>Release Date: {movie.release_date}</h3>
@@ -43,7 +46,8 @@ export default movieDetail;
 
 const MovieWrapper = styled.div `
   position: relative;
-  padding-top: 50vh;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
   background: url(${props => props.backdrop}) no-repeat;
   background-size: cover;
 `;
@@ -59,5 +63,6 @@ const MovieInfo = styled.div `
   img{
     position: relative;
     top: -5rem;
+    max-height: 15rem;
   }
 `;
