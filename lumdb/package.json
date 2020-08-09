@@ -14,7 +14,7 @@
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1"
   },
-  "homepage": "https://frontendmike.com/lumdb",
+  "homepage": "https://frontendmike.github.io/frontendmike.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
