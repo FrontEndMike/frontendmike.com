@@ -35,4 +35,7 @@ const MovieGrid = styled.div `
 	padding: 1rem;
 	grid-template-columns: repeat(5, 1fr);
 	grid-row-gap: 1rem;
+	@media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
