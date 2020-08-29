@@ -1,18 +1,17 @@
 
 let counter = 0;
 
+function createNode(element) {
+	return document.createElement(element);
+}
+
+function append(parent, el) {
+  return parent.appendChild(el);
+}
 
 const ul = document.getElementById('app');
 
 export function searchFunc() {
-
-	function createNode(element) {
-		return document.createElement(element);
-	}
-
-	function append(parent, el) {
-	return parent.appendChild(el);
-	}
 	// Take in input value from html
 	// Variables had to be declared within function to work
 	const SEARCH_QUERY = document.getElementById("input").value
