@@ -4,15 +4,23 @@ Template Name: Full Width (No Sidebar)
 */
 
 get_header(); ?>
-			
-	<div class="content ">
-		<div class="blog-hero">
-			<div class="row">
-				<div class="">
-					<h3><?php the_title(); ?></h3>
-				</div>
+<?php if(has_post_thumbnail()) {
+ $feat_image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), "full", true);
+} ?>
+
+<div id="landing" class="hero blogs" style="margin-bottom: 4rem; background-image:url(<?php echo (($feat_image[0]))?>);" data-width="<?php echo (($feat_image[1]))?>" date-height="<?php echo (($feat_image[2]))?>">
+	<div class="overlay">
+		<div class="header-contain">
+			<div class="content-scroll">
+			  <div class="content-scroll__container">
+			  <h1 class="text-center"><?php the_title(); ?></h1>
+			  </div>
 			</div>
 		</div>
+	</div>
+</div>
+			
+	<div class="content ">
 	
 		<div class="inner-content full-width row">
 	
