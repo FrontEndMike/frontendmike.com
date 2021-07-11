@@ -55,6 +55,16 @@ button{
 		color: white;
 	}
 }
+
+a, a:visited { outline: none; }
+a:hover,
+a:active,
+a:focus {
+  /*Edit at will*/
+  background: transparent;  
+}
+
+
 i.fab.fa-github {
     font-size: 1.25rem;
     margin-right: .5rem;
