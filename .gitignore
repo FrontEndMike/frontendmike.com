@@ -112,3 +112,6 @@ wp-content/themes/FrontEndMike-2019/node_modules
 *.asf
 *.wmv
 *.avi
+.ftpquota
+.htaccess-e52d1e5-03144150.orig
+.htaccess06152019
