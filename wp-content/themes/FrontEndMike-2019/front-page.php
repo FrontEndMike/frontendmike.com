@@ -88,7 +88,7 @@ get_header(); ?>
 		                <div class="body-copy-panel">
 		                	   <p>Today (at the time of this writing) it is December 2, 2017, the date of our Future’s Fund  Student Showcase. I must say, seeing these young people on stage articulating their vision and the things that they’ve learned in their time with Future’s Fund is amazing and overwhelming. I’ve never taught students before joining the FF Instructor team. Seeing MY students that I’ve spent several saturdays instructing standing tall and speaking with confidence was unbelievable. That feeling is worth more than money. To help the youth, to help the community and to have a hand in crafting the future generations is huge to me.</p>
 		           		</div>
-		           		<a href="#" class="button btn-style">Learn More</a>
+		           		<a href="/my-experience-working-with-futures-fund/" class="button btn-style">Learn More</a>
 		        	</div>
 				</div>
 			</section>
