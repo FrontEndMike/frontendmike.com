@@ -22,6 +22,7 @@ get_header(); ?>
 				<button class="cat-btn" data-filter=".foundation">Foundation</button>
 				<button class="cat-btn" data-filter=".javascript">JavaScript</button>
 				<button class="cat-btn" data-filter=".bootstrap">Bootstrap</button>
+				<button class="cat-btn" data-filter=".react">React</button>
 				<!-- <button data-filter=".metal:not(.transition)">metal but not transition</button> -->
 			</div>
 		</div>
