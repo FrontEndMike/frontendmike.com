@@ -1,23 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
-/***/ (() => {
-
-// Navigation toggle
-window.addEventListener('load', function () {
-  var main_navigation = document.querySelector('#primary-menu');
-  document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
-    e.preventDefault();
-    main_navigation.classList.toggle('hidden');
-  });
-});
-
-/***/ }),
-
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -41,6 +24,23 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./resources/js/app.js":
+/*!*****************************!*\
+  !*** ./resources/js/app.js ***!
+  \*****************************/
+/***/ (() => {
+
+// Navigation toggle
+window.addEventListener('load', function () {
+  var main_navigation = document.querySelector('#primary-menu');
+  document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
+    e.preventDefault();
+    main_navigation.classList.toggle('hidden');
+  });
+});
 
 /***/ })
 
