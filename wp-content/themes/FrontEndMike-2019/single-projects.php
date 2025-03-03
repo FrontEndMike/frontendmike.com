@@ -29,17 +29,21 @@ get_header(); ?>
 </div>
 
 		<div class="button-contain">
-			<div class="row">
-				<div class="large-6 medium-6 small-6 columns">
+			<div class="button-contain-project">
+				
+				<?php $github_link = get_field('github_link'); if ($github_link) : ?>
 					<a class="btn" href="<?php the_field('github_link'); ?>" target="_blank" rel="noopener noreferrer">
 						<i class="fab fa-github"></i> Github
 					</a>
-				</div>
-				<div class="large-6 medium-6 small-6 columns">
+				<?php endif; ?>
+				
+				
+				
+				
 					<a class="btn" href="<?php the_field('project_link'); ?>" target="_blank" rel="noopener noreferrer">
 						View Here
 					</a>
-				</div>
+				
 			</div>
 		</div>
 		<div class="row">
