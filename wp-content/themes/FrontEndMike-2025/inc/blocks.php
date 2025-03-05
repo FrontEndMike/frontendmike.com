@@ -8,18 +8,18 @@ function my_acf_register_blocks() {
                 'title'           => __('Hero Block'),
                 'render_template' => get_template_directory() . '/template-parts/blocks/hero.php',
                 'icon'            => 'cover-image',
-                'keywords'        => ['hero', 'banner'],
+                'keywords'        => ['Hero', 'Banner'],
                 'supports'          => array(
                     'anchor' => true, 
                     'customClassName' => true,
                 ),
             ],
             [
-                'name'            => 'testimonial',
-                'title'           => __('Testimonial Block'),
-                'render_template' => get_template_directory() . '/template-parts/blocks/testimonial.php',
+                'name'            => 'latest-posts',
+                'title'           => __('Latest Posts Block'),
+                'render_template' => get_template_directory() . '/template-parts/blocks/latest-posts.php',
                 'icon'            => 'format-quote',
-                'keywords'        => ['testimonial', 'review'],
+                'keywords'        => ['Posts', 'Latest'],
             ]
         ];
 
