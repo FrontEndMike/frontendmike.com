@@ -1,5 +1,5 @@
 <?php
-
+require_once get_template_directory() . '/inc/blocks.php';
 /**
  * Theme setup.
  */
@@ -117,3 +117,4 @@ function tailpress_register_styles() {
     wp_enqueue_style('custom-style', get_theme_file_uri('assets/css/custom.css'), array(), wp_get_theme()->get('Version'));
 }
 add_action('wp_enqueue_scripts', 'tailpress_register_styles');
+

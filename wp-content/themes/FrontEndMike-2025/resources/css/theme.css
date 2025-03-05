@@ -1,8 +1,8 @@
 @theme {
     --breakpoint-xs: 480px;
     --breakpoint-sm: 600px;
-    --breakpoint-md: 782px;
-    --breakpoint-lg: var(--wp--style--global--content-size);
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1028px;
     --breakpoint-xl: var(--wp--style--global--wide-size);
     --breakpoint-2xl: 1440px;
 

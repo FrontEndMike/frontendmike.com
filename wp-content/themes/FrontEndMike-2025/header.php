@@ -17,10 +17,10 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header class="px-4 bg-white shadow-md fixed top-0 left-0 w-full z-50">
-
+	<header class="px-4 bg-white shadow-md fixed top-0 left-0 w-full z-50  transition-all duration-300 ease-in-out p-4">
+	<a href="#content" class="skip-link">Skip to Main Content</a>
 		<div class="mx-auto container">
-			<div class="lg:flex lg:justify-between lg:items-center  py-6">
+			<div class="lg:flex lg:justify-between lg:items-center ">
 				<div class="flex justify-between items-center">
 					<div>
 						<?php if ( has_custom_logo() ) { ?>
@@ -79,3 +79,15 @@
 		</div>
 	</header>
 <div class="h-16"></div>
+<script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("py-2");
+      header.classList.remove("p-4");
+    } else {
+      header.classList.add("p-4");
+      header.classList.remove("py-2");
+    }
+  });
+</script>
