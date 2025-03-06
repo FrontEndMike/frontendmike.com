@@ -37,8 +37,8 @@
 
 	</div>
 	<div class="text-center my-8">
-		<a href="/blog" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
-			View All Posts
+		<a href="/projects" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
+			View All Projects
 		</a>
 	</div>
 
