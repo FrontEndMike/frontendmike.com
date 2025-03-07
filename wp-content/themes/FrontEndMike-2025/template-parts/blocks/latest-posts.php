@@ -21,7 +21,7 @@ $recent_posts = new WP_Query(array(
                         </a>
                     <?php endif; ?>
                     <h3 class="mt-2 leading-none text-xl font-semibold mb-2"><?php the_title(); ?></h3>
-                    <p class="text-sm font-semibold mb-2"><?php the_date(); ?></p>
+                    <time class="text-sm font-semibold mb-2"><?php the_date(); ?></time>
                     <p class="text-gray-600 mb-4"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
                     <a href="<?php the_permalink(); ?>" class="text-[var(--wp--preset--color--primary)] font-bold hover:underline">
                         Read More →

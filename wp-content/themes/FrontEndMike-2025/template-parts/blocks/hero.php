@@ -20,7 +20,7 @@
         <?php endif; ?>
 
         <?php if ($subheadline) : ?>
-            <p class="mt-4 text-lg md:text-xl"><?php echo esc_html($subheadline); ?></p>
+            <p class="max-w-4xl mx-auto text-center mt-4 text-lg md:text-xl"><?php echo esc_html($subheadline); ?></p>
         <?php endif; ?>
     </div>
 </section>
