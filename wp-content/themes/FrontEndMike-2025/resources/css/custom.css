@@ -2,20 +2,30 @@ article > *:not(.entry-content),
 .entry-content > * {
     @apply mx-auto;
 }
-
-.entry-content, .block-editor-block-list__layout {
+a{
+    text-decoration: none !important;
+}
+.entry-content {
     h1 {
-        @apply text-2xl;
+        @apply text-2xl mb-2;
     }
 
     h2 {
-        @apply text-xl;
+        @apply text-xl mb-2 mt-4;
     }
 
     h3 {
-        @apply text-lg;
+        @apply text-lg mb-2 mt-4 font-bold;
     }
-
+    h4{
+        @apply font-bold mb-2 mt-4;
+    }
+    h4 span{
+        font-weight: inherit !important;
+    }
+    p{
+        @apply mb-2;
+    }
     p, ul, ol {
         a {
             @apply text-blue-500 underline;
@@ -25,7 +35,7 @@ article > *:not(.entry-content),
             }
         }
 
-        @apply mb-8;
+        @apply mb-2;
     }
 
     ul:not(.block-editor-block-variation-picker__variations) {
@@ -39,6 +49,9 @@ article > *:not(.entry-content),
             @apply list-decimal list-inside;
         }
     }
+}
+.wp-block-columns p{
+    @apply mb-2;
 }
 /*
   FrontEndMike Custom CSS
@@ -64,6 +77,12 @@ article > *:not(.entry-content),
   clip: auto; /* Makes the link visible when focused */
   position: static;
 }
+code {
+    background-color: black;
+    color: coral;
+    padding: 2px 12px;
+    border-radius: 25px;
+}
 
 header img{
     max-width: 3rem;
@@ -76,4 +95,18 @@ header img{
 .hero{
     height: 30rem;
     margin-bottom: 1rem !important;
+}
+
+pre {
+    background-color: black;
+    color: lime;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.filter-button.active {
+    background-color: #000;
+    color: white;
+    border-color: #000;
 }
