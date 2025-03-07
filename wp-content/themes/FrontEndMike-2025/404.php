@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+<?php get_header(); ?>
+<section class="hero alignfull relative h-screen overflow-hidden">
+    <video class="absolute inset-0 w-full h-full object-cover backdrop-blur-md" autoplay="" muted="" loop="" playsinline="">
+        <source src="/wp-content/uploads/2025/03/hello_world.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-	<?php wp_head(); ?>
-</head>
-<body class="antialiased">
-	<div class="md:flex min-h-screen">
-		<div class="w-full md:w-1/2 flex items-center justify-center">
-			<div class="max-w-sm m-8">
-				<div class="text-5xl md:text-15xl text-gray-800 border-primary border-b">404</div>
-				<div class="w-16 h-1 bg-purple-light my-3 md:my-6"></div>
-				<p class="text-gray-800 text-2xl md:text-3xl font-light mb-8"><?php _e( 'Sorry, the page you are looking for could not be found.', 'tailpress' ); ?></p>
-				<a href="<?php echo get_bloginfo( 'url' ); ?>" class="bg-primary px-4 py-2 rounded-xs text-white">
-					<?php _e( 'Go Home', 'tailpress' ); ?>
-				</a>
-			</div>
-		</div>
+
+
+
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+                    <h1 class="text-5xl md:text-6xl font-bold">404</h1>
+					<p class="max-w-4xl mx-auto text-center mt-4 text-lg md:text-xl">Oops, you may have gotten a little turned around</p>
+            </div>
+			<div class="absolute inset-0 bg-black/40"></div>
+</section>
+
+	<div class="container my-8 mx-auto max-w-5xl px-4 entry-content">
+		<h3 class="text-center">
+			Check out some of my projects or blogs
+		</h3> 
 	</div>
-</body>
-</html>
+	<div class="text-center my-8">
+		<a href="/projects" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
+			View All Projects
+		</a>
+		<a href="/blog" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
+			View All Posts
+		</a>
+	</div>
+
+<?php
+get_footer();
