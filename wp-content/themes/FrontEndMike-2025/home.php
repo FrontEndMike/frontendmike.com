@@ -13,6 +13,7 @@
         
                     <p class="max-w-4xl mx-auto text-center mt-4 text-lg md:text-xl">Thoughts, inspiration, and knowledge I've picked up on my coding journey.</p>
             </div>
+            <div class="absolute inset-0 bg-black/40"></div>
 </section>
 
 <main class="container mx-auto py-12">

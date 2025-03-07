@@ -13,11 +13,12 @@
         
                     <p class="max-w-4xl mx-auto text-center mt-4 text-lg md:text-xl">Here are some projects I have built and discussed a little bit. Some were done professionally, while others are side projects that served as a way to learn new topics and create some cool things. I've also included some of my codepen "Tidbits" which are small components built as a 10 minute presentation to introduce a front end topic to co-workers and friends.</p>
             </div>
+<div class="absolute inset-0 bg-black/40"></div>
 </section>
 
 <main class="container mx-auto py-12">
     <div class="px-4">
-        <p class="mb-6">All Sites listed here were custom built using a blank starter theme.</p>
+        <p class="mb-6">All Sites listed here were custom built using a blank starter theme. Also, all projects listed here are ones where I did 100% of the front end development.</p>
     <?php
         $terms = get_terms( array(
             'taxonomy'   => 'project_category',
