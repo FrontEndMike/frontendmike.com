@@ -73,7 +73,7 @@ if ( $query->have_posts() ) :  ?>
                     $category_classes .= ' category-' . $category->slug . ' ';
                 }
             } ?>
-                <div class="project p-6 bg-white shadow-lg rounded-lg mb-8 <?php echo esc_attr( $category_classes ); ?>">
+                <div class="project card mb-8 <?php echo esc_attr( $category_classes ); ?>">
                     <?php if (has_post_thumbnail()) : ?>
                         <a href="<?php the_permalink(); ?>">
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 

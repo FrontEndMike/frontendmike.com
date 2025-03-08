@@ -19,7 +19,7 @@
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header class="px-4 bg-white shadow-md fixed top-0 left-0 w-full z-50  transition-all duration-300 ease-in-out p-4">
+	<header class="main-header p-4">
 	<a href="#content" class="skip-link">Skip to Main Content</a>
 		<div class="mx-auto container">
 			<div class="lg:flex lg:justify-between lg:items-center ">

@@ -17,7 +17,7 @@
     <?php if ($recent_posts->have_posts()) : ?>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <?php while ($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
-                <div class="p-6 bg-white shadow-lg rounded-lg">
+                <div class="card">
                     <?php if (has_post_thumbnail()) : ?>
                         <a href="<?php the_permalink(); ?>">
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 

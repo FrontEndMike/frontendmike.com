@@ -20,11 +20,11 @@
     <?php if (have_posts()) : ?>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <?php while (have_posts()) : the_post(); ?>
-                <div class="p-6 bg-white shadow-lg rounded-lg">
+                <div class="card">
                     <!-- Featured Image -->
                     <?php if (has_post_thumbnail()) : ?>
                         <a href="<?php the_permalink(); ?>">
-                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" 
+                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 
                                  alt="<?php the_title_attribute(); ?>" 
                                  class="w-full h-48 object-cover rounded-t-lg">
                         </a>

@@ -59,6 +59,12 @@ a{
 /*
   FrontEndMike Custom CSS
 */
+.card{
+    @apply p-6 bg-white shadow-lg rounded-lg;
+}
+.main-header{
+    @apply px-4 bg-white shadow-md fixed top-0 left-0 w-full z-50  transition-all duration-300 ease-in-out;
+}
 .skip-link {
   position: absolute;
   top: 0;
