@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 	<?php wp_head(); ?>
 </head>
@@ -50,15 +52,11 @@
 
 					<div class="lg:hidden">
 						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-							<svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1"
-								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-									<g id="icon-shape">
-										<path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z"
-											  id="Combined-Shape"></path>
-									</g>
-								</g>
-							</svg>
+					<button id="ham-interior" class="ham-menu hamburger--spin is-inactive" type="button">
+						<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+						</span>
+					</button> 
 						</a>
 					</div>
 				</div>
@@ -67,7 +65,7 @@
 				wp_nav_menu(
 					array(
 						'container_id'    => 'primary-menu',
-						'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+						'container_class' => 'hidden bg-white mt-4 p-2 lg:mt-0 lg:p-0 lg:bg-transparent lg:block transition-all duration-300 ease-in-out',
 						'menu_class'      => 'lg:flex lg:-mx-4',
 						'theme_location'  => 'primary',
 						'li_class'        => 'lg:mx-4',
@@ -79,15 +77,3 @@
 		</div>
 	</header>
 <div class="h-16"></div>
-<script>
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-      header.classList.add("py-2");
-      header.classList.remove("p-4");
-    } else {
-      header.classList.add("p-4");
-      header.classList.remove("py-2");
-    }
-  });
-</script>

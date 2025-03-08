@@ -5,13 +5,16 @@ article > *:not(.entry-content),
 a{
     text-decoration: none !important;
 }
+.wp-block-image{
+    margin: inherit !important;
+}
 .entry-content {
     h1 {
         @apply text-2xl mb-2;
     }
 
     h2 {
-        @apply text-xl mb-2 mt-4;
+        @apply text-xl mb-2 mt-4 font-bold;
     }
 
     h3 {
@@ -104,9 +107,14 @@ pre {
     border-radius: 5px;
 }
 
-
+#primary-menu li{
+    @apply mb-2;
+}
 .filter-button.active {
     background-color: #000;
     color: white;
     border-color: #000;
 }
+
+
+
