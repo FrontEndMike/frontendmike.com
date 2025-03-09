@@ -117,7 +117,7 @@ pre {
 }
 
 #primary-menu li{
-    @apply mb-2;
+    @apply mb-4;
 }
 .filter-button.active {
     background-color: #000;
