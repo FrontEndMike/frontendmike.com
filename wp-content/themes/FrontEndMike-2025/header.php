@@ -27,7 +27,9 @@
 					<div>
 						<?php if ( has_custom_logo() ) { ?>
                             <div class="flex flex-wrap gap-2 mb-1">
-								<?php the_custom_logo(); ?>
+								<div class="hidden sm:block max-[400px]:hidden">
+									<?php the_custom_logo(); ?>
+								</div>
 								<div>
 									<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
 										<?php echo get_bloginfo( 'name' ); ?>

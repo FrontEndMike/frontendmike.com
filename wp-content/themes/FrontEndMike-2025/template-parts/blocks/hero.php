@@ -16,7 +16,7 @@
 
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
         <?php if ($headline) : ?>
-            <h1 class="text-5xl md:text-6xl font-bold"><?php echo esc_html($headline); ?></h1>
+            <h1 class="text-4xl md:text-6xl font-bold"><?php echo esc_html($headline); ?></h1>
         <?php endif; ?>
 
         <?php if ($subheadline) : ?>

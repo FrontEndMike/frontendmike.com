@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
     if (hamButton) { // Ensure element exists before adding event listener
         hamButton.addEventListener("click", toggleMenu);
-        console.log(hamButton);
     }
 
     function toggleMenu() {

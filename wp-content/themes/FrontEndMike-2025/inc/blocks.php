@@ -26,7 +26,6 @@ function my_acf_register_blocks() {
         foreach ($blocks as $block) {
             acf_register_block_type(array_merge([
                 'category'      => 'frontendmike-blocks',
-                'enqueue_style' => get_template_directory_uri() . "/css/blocks/{$block['name']}.css",
             ], $block));
         }
     }

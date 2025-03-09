@@ -9,7 +9,7 @@
 
 
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
-                    <h1 class="text-5xl md:text-6xl font-bold">Projects</h1>
+                    <h1 class="text-4xl md:text-6xl font-bold">Projects</h1>
         
                     <p class="max-w-4xl mx-auto text-center mt-4 text-lg md:text-xl">Here are some projects I have built and discussed a little bit. Some were done professionally, while others are side projects that served as a way to learn new topics and create some cool things. I've also included some of my codepen "Tidbits" which are small components built as a 10 minute presentation to introduce a front end topic to co-workers and friends.</p>
             </div>

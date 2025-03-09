@@ -111,6 +111,9 @@ pre {
     color: lime;
     padding: 1rem;
     border-radius: 5px;
+    padding: 0.25rem .75rem;
+    margin: 0.5rem 0;
+    overflow: scroll;
 }
 
 #primary-menu li{
@@ -122,5 +125,8 @@ pre {
     border-color: #000;
 }
 
-
+figure.figure-margin.wp-block-image img {
+    margin: 1rem 0 !important;
+    display: block !important;
+}
 

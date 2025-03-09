@@ -9,7 +9,7 @@
 
 
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
-                    <h1 class="text-5xl md:text-6xl font-bold">Blog</h1>
+                    <h1 class="text-4xl md:text-6xl font-bold">Blog</h1>
         
                     <p class="max-w-4xl mx-auto text-center mt-4 text-lg md:text-xl">Thoughts, inspiration, and knowledge I've picked up on my coding journey.</p>
             </div>
