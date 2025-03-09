@@ -113,7 +113,7 @@ pre {
     border-radius: 5px;
     padding: 0.25rem .75rem;
     margin: 0.5rem 0;
-    @apply overflow-x-auto max-w-full;
+    white-space: pre-wrap;
 }
 
 #primary-menu li{
