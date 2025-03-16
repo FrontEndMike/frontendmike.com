@@ -115,7 +115,10 @@ pre {
     margin: 0.5rem 0;
     white-space: pre-wrap;
 }
-
+.hero{
+    left: 0;
+    right: 0;
+}
 #primary-menu li{
     @apply mb-4;
 }

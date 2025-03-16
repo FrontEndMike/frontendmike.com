@@ -16,7 +16,7 @@
 <div class="absolute inset-0 bg-black/40"></div>
 </section>
 
-<main class="container mx-auto py-12">
+<main class="container mx-auto">
     <div class="px-4">
         <p class="mb-6">All Sites listed here were custom built using a blank starter theme. Also, all projects listed here are ones where I did 100% of the front end development.</p>
     <?php

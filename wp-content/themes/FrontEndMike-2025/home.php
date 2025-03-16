@@ -16,7 +16,7 @@
             <div class="absolute inset-0 bg-black/40"></div>
 </section>
 
-<main class="container mx-auto py-12">
+<main class="container mx-auto py-12 px-4">
     <?php if (have_posts()) : ?>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <?php while (have_posts()) : the_post(); ?>
