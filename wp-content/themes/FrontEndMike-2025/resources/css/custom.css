@@ -87,10 +87,11 @@ a{
   position: static;
 }
 code {
-    background-color: black;
-    color: coral;
-    padding: 2px 12px;
-    border-radius: 25px;
+    background-color: #2E3440;
+    color: #ECEFF4;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 header img{
@@ -107,8 +108,8 @@ header img{
 }
 
 pre {
-    background-color: black;
-    color: lime;
+    background-color: #2E3440;
+    color: #ECEFF4;
     padding: 1rem;
     border-radius: 5px;
     padding: 0.25rem .75rem;
