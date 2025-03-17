@@ -279,6 +279,12 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -296,6 +302,9 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
   }
   .block {
     display: block;
@@ -598,6 +607,36 @@
       display: block;
     }
   }
+  .sm\:hidden {
+    @media (width >= 600px) {
+      display: none;
+    }
+  }
+  .md\:mx-2 {
+    @media (width >= 768px) {
+      margin-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .md\:mt-0 {
+    @media (width >= 768px) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:block {
+    @media (width >= 768px) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 768px) {
+      display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 768px) {
+      display: none;
+    }
+  }
   .md\:basis-1\/2 {
     @media (width >= 768px) {
       flex-basis: calc(1/2 * 100%);
@@ -611,6 +650,16 @@
   .md\:flex-nowrap {
     @media (width >= 768px) {
       flex-wrap: nowrap;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 768px) {
+      align-items: center;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 768px) {
+      justify-content: space-between;
     }
   }
   .md\:text-3xl {
@@ -634,6 +683,11 @@
   .lg\:-mx-4 {
     @media (width >= 1028px) {
       margin-inline: calc(var(--spacing) * -4);
+    }
+  }
+  .lg\:mx-2 {
+    @media (width >= 1028px) {
+      margin-inline: calc(var(--spacing) * 2);
     }
   }
   .lg\:mx-4 {
@@ -1537,6 +1591,10 @@
     height: 30rem;
     margin-bottom: 1rem !important;
   }
+  .nav-icon {
+    padding: 2px 9px;
+    font-size: 18px;
+  }
   pre {
     background-color: #2E3440;
     color: #ECEFF4;
@@ -1549,9 +1607,6 @@
   .hero {
     left: 0;
     right: 0;
-  }
-  #primary-menu li {
-    margin-bottom: calc(var(--spacing) * 4);
   }
   .filter-button.active {
     background-color: #000;

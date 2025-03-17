@@ -27,7 +27,7 @@
         ) );
 
         if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) : ?>
-            <h2 class="text-lg font-bold block mb-4">Sort by technology used:</h2>
+            <h2 class="text-lg font-bold block mb-4">Filter by technology used:</h2>
             <div class="project-category-buttons flex flex-wrap gap-2 mb-8">
                 <?php foreach ( $terms as $term ) : ?>
                     <button class="border border-black px-2 py-1 filter-button bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" data-category="<?php echo esc_attr( $term->slug ); ?>">

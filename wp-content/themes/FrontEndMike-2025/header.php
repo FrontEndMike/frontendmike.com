@@ -22,7 +22,7 @@
 	<header class="main-header p-4">
 	<a href="#content" class="skip-link">Skip to Main Content</a>
 		<div class="mx-auto container">
-			<div class="lg:flex lg:justify-between lg:items-center ">
+			<div class="lg:flex md:flex md:justify-between lg:justify-between md:items-center lg:items-center ">
 				<div class="flex justify-between items-center">
 					<div>
 						<?php if ( has_custom_logo() ) { ?>
@@ -51,8 +51,14 @@
 
 						<?php } ?>
 					</div>
+					
+					<div class="md:hidden lg:hidden flex items-center">
+						<div class="gap-4 flex md:hidden lg:hidden mr-4 mb-2">
+							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i></a>
 
-					<div class="lg:hidden">
+							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i></a>
+						</div>
+
 						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
 					<button id="ham-interior" class="ham-menu hamburger--spin is-inactive" type="button">
 						<span class="hamburger-box">
@@ -62,19 +68,25 @@
 						</a>
 					</div>
 				</div>
+				<div class="flex items-center">
+					<div class="gap-2 hidden md:flex lg:flex">
+						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i></a>
 
+						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i></a>
+					</div>
 				<?php
 				wp_nav_menu(
 					array(
 						'container_id'    => 'primary-menu',
-						'container_class' => 'hidden bg-white mt-4 p-2 lg:mt-0 lg:p-0 lg:bg-transparent lg:block transition-all duration-300 ease-in-out text-lg',
-						'menu_class'      => 'lg:flex lg:-mx-4',
+						'container_class' => 'hidden bg-white mt-4 p-2 md:mt-0 lg:mt-0 lg:p-0 lg:bg-transparent lg:flex md:flex transition-all duration-300 ease-in-out text-lg',
+						'menu_class'      => 'lg:flex md:flex',
 						'theme_location'  => 'primary',
-						'li_class'        => 'lg:mx-4 mb-4',
+						'li_class'        => 'lg:mx-2 md:mx-2',
 						'fallback_cb'     => false,
 					)
 				);
 				?>
+				</div>
 			</div>
 		</div>
 	</header>
