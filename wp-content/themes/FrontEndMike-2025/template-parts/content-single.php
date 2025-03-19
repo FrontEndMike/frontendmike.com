@@ -9,7 +9,7 @@
 			</div>
 			<?php endif; ?>
 		<div class="basis-full md:basis-1/2 lg:basis-3/5">
-			<h2 class="text-4xl font-extrabold leading-tight mb-1"><?php the_title(); ?></h2>
+			<h2 class="text-2xl sm:text-4xl font-extrabold leading-tight mb-1"><?php the_title(); ?></h2>
 			<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-gray-700"><?php echo get_the_date(); ?></time>
 
 			<div class="flex flex-wrap mt-4 gap-4">

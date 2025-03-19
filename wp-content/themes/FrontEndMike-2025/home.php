@@ -18,17 +18,17 @@
 
 <main class="container mx-auto py-12 px-4 max-w-[900px]">
     <?php if (have_posts()) : ?>
-        <div class="grid grid-cols-1  gap-6">
+        <div class="grid grid-cols-1  gap-8">
             <?php while (have_posts()) : the_post(); ?>
                 <?php $has_thumbnail = has_post_thumbnail(); ?>
                 
-                <article class="grid grid-cols-1 isolate relative mb-4 sm:mb-0 sm:gap-4 <?php echo $has_thumbnail ? 'sm:grid-cols-5' : 'grid-cols-1'; ?>">
+                <article class="grid grid-cols-1 isolate relative mb-8 sm:mb-0 sm:gap-4 <?php echo $has_thumbnail ? 'sm:grid-cols-5' : 'grid-cols-1'; ?>">
                     
                     <?php if ($has_thumbnail) : ?>
                         <div class="col-span-1">
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 
                                 alt="<?php the_title_attribute(); ?>" 
-                                class="w-full rounded-lg mb-4 object-cover">
+                                class="w-full rounded-lg object-cover">
                         </div>
                     <?php endif; ?>
 

@@ -31,10 +31,10 @@
 									<?php the_custom_logo(); ?>
 								</div>
 								<div>
-									<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
+									<a style="line-height: 0.9;" href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
 										<?php echo get_bloginfo( 'name' ); ?>
 									</a>
-									<p class="text-sm font-light text-gray-600">
+									<p style="line-height: 0.9;" class="text-sm font-light text-gray-600">
 										<span class="hidden md:inline lg:inline">Atlanta, GA -</span> Front End Web Developer
 									</p>
 								</div>
@@ -83,7 +83,7 @@
 						'container_class' => 'hidden bg-white  p-2 lg:p-0 lg:bg-transparent lg:flex md:flex transition-all duration-300 ease-in-out text-lg',
 						'menu_class'      => 'lg:flex md:flex',
 						'theme_location'  => 'primary',
-						'li_class'        => 'lg:mx-2 md:mx-2 mb-2 md:mb-0 lg:mb-0',
+						'li_class'        => 'lg:mx-2 md:mx-2 mt-4 md:mt-0 lg:mt-0',
 						'fallback_cb'     => false,
 					)
 				);

@@ -19,14 +19,14 @@
 		<h3 class="text-center">
 			Check out some of my projects or blogs
 		</h3> 
-	</div>
-	<div class="text-center my-8">
-		<a href="/projects" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
-			View All Projects
-		</a>
-		<a href="/blog" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
-			View All Posts
-		</a>
+		<div class="text-center my-8 gap-8 flex flex-wrap justify-center">
+			<a href="/projects" class="button">
+				View All Projects
+			</a>
+			<a href="/blog" class="button">
+				View All Posts
+			</a>
+		</div>
 	</div>
 
 <?php

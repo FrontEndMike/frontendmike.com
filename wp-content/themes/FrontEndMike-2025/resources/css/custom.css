@@ -1,7 +1,7 @@
-article > *:not(.entry-content),
+/* article > *:not(.entry-content),
 .entry-content > * {
     @apply mx-auto;
-}
+} */
 a{
     text-decoration: none !important;
 }
@@ -95,7 +95,8 @@ code {
 }
 
 header img{
-    max-width: 3rem;
+    max-height: 40px;
+    width: auto;
 }
 
 #content{
@@ -142,4 +143,7 @@ figure.figure-margin.wp-block-image img {
 article > *:not(.entry-content),
 .entry-content > * {
     margin-inline: 0 !important;
+}
+.button{
+    @apply border border-black px-3 py-2 bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-xl;
 }

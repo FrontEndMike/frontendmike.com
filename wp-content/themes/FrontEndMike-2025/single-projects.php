@@ -38,7 +38,7 @@
 
 	</div>
 	<div class="text-center my-8">
-		<a href="/projects" class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:brightness-90">
+		<a href="/projects" class="button">
 			View All Projects
 		</a>
 	</div>

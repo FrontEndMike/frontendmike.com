@@ -43,7 +43,7 @@
         </div>
         <?php if ($cta): ?>
             <div class="text-center mt-8">
-                <a href="<?php echo esc_url($cta['url']); ?>" target="<?php echo esc_attr($cta['target'] ?: '_self'); ?>" class="border border-black px-3 py-2 bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-xl">
+                <a href="<?php echo esc_url($cta['url']); ?>" target="<?php echo esc_attr($cta['target'] ?: '_self'); ?>" class="button">
                     <?php echo esc_html($cta['title']); ?>
                 </a>
             </div>
