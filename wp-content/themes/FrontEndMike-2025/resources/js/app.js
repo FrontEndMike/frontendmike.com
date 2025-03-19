@@ -43,7 +43,7 @@ if(projects){
 
                 // If no categories are selected, show all projects
                 if (selectedCategories.length === 0) {
-                    project.style.display = 'block';
+                    project.style.display = 'grid';
                 } else {
                     let showProject = true;
 
@@ -54,7 +54,7 @@ if(projects){
                     });
 
                     // Toggle visibility based on matching all categories
-                    project.style.display = showProject ? 'block' : 'none';
+                    project.style.display = showProject ? 'grid' : 'none';
                 }
             });
         });

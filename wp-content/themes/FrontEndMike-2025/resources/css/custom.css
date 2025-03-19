@@ -108,7 +108,7 @@ header img{
 }
 .nav-icon{
     padding: 2px 9px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 pre {
@@ -136,3 +136,10 @@ figure.figure-margin.wp-block-image img {
     display: block !important;
 }
 
+.article-element{
+    @apply hover:scale-102 transition-transform duration-300 ease-in-out isolate relative border-solid border-black border-1 p-1 rounded-lg relative mb-8
+}
+article > *:not(.entry-content),
+.entry-content > * {
+    margin-inline: 0 !important;
+}

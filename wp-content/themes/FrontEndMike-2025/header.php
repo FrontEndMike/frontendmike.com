@@ -35,7 +35,7 @@
 										<?php echo get_bloginfo( 'name' ); ?>
 									</a>
 									<p class="text-sm font-light text-gray-600">
-										<?php echo get_bloginfo( 'description' ); ?>
+										<span class="hidden md:inline lg:inline">Atlanta, GA -</span> Front End Web Developer
 									</p>
 								</div>
 							</div>
@@ -54,9 +54,9 @@
 					
 					<div class="md:hidden lg:hidden flex items-center">
 						<div class="gap-4 flex md:hidden lg:hidden mr-4 mb-2">
-							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i></a>
+							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i><span class="sr-only">LinkedIn</span></a>
 
-							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i></a>
+							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i><span class="sr-only">Github</span></a>
 						</div>
 
 						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
@@ -69,19 +69,21 @@
 					</div>
 				</div>
 				<div class="flex items-center">
-					<div class="gap-2 hidden md:flex lg:flex">
-						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i></a>
+					<div class="gap-2 hidden md:flex lg:flex mr-2">
+						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i>
+							<span class="sr-only">LinkedIn</span>
+					</a>
 
-						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i></a>
+						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i><span class="sr-only">Github</span></a>
 					</div>
 				<?php
 				wp_nav_menu(
 					array(
 						'container_id'    => 'primary-menu',
-						'container_class' => 'hidden bg-white mt-4 p-2 md:mt-0 lg:mt-0 lg:p-0 lg:bg-transparent lg:flex md:flex transition-all duration-300 ease-in-out text-lg',
+						'container_class' => 'hidden bg-white  p-2 lg:p-0 lg:bg-transparent lg:flex md:flex transition-all duration-300 ease-in-out text-lg',
 						'menu_class'      => 'lg:flex md:flex',
 						'theme_location'  => 'primary',
-						'li_class'        => 'lg:mx-2 md:mx-2',
+						'li_class'        => 'lg:mx-2 md:mx-2 mb-2 md:mb-0 lg:mb-0',
 						'fallback_cb'     => false,
 					)
 				);
