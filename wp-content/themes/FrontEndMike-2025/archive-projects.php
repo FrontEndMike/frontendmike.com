@@ -91,10 +91,12 @@ if ( $query->have_posts() ) :  ?>
                             if ($project_source) : ?>
                             <p class="text-sm mb-2"><?php echo esc_html($project_source); ?></p>
                         <?php endif; ?>
-                        <time class="text-sm block font-semibold mb-2"><?php the_date(); ?></time>
-                        <p class="text-gray-600 ">
-                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
-                        </p>
+                        <?php if (!empty(get_the_excerpt())) : ?>
+                            <hr class="mb-2">
+                            <p class="text-gray-600 ">
+                                <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                            </p>
+                        <?php endif; ?>
                     </div>
                 </article>
             <?php endwhile; ?>

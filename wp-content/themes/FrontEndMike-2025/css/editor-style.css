@@ -722,14 +722,34 @@
       display: none;
     }
   }
+  .sm\:mb-0 {
+    @media (width >= 600px) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .sm\:block {
     @media (width >= 600px) {
       display: block;
     }
   }
+  .sm\:grid-cols-1 {
+    @media (width >= 600px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 600px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:grid-cols-5 {
+    @media (width >= 600px) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .sm\:gap-4 {
+    @media (width >= 600px) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .md\:mx-2 {

@@ -31,17 +31,19 @@
                             </a>
                         </h3>
 
-                        <time class="text-sm block font-semibold mb-2"><?php the_date(); ?></time>
-                        <p class="text-gray-600 ">
-                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
-                        </p>
+                        <?php if (!empty(get_the_excerpt())) : ?>
+                            <hr class="mb-2">
+                            <p class="text-gray-600 ">
+                                <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                            </p>
+                        <?php endif; ?>
                     </div>
                 </article>
             <?php endwhile; ?>
         </div>
         <?php if ($cta): ?>
             <div class="text-center mt-8">
-                <a href="<?php echo esc_url($cta['url']); ?>" target="<?php echo esc_attr($cta['target'] ?: '_self'); ?>" class="border border-black px-2 py-1 bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-xl">
+                <a href="<?php echo esc_url($cta['url']); ?>" target="<?php echo esc_attr($cta['target'] ?: '_self'); ?>" class="border border-black px-3 py-2 bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-xl">
                     <?php echo esc_html($cta['title']); ?>
                 </a>
             </div>

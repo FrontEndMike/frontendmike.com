@@ -22,7 +22,7 @@
             <?php while (have_posts()) : the_post(); ?>
                 <?php $has_thumbnail = has_post_thumbnail(); ?>
                 
-                <article class="grid isolate relative gap-4 <?php echo $has_thumbnail ? 'grid-cols-5' : 'grid-cols-1'; ?>">
+                <article class="grid grid-cols-1 isolate relative mb-4 sm:mb-0 sm:gap-4 <?php echo $has_thumbnail ? 'sm:grid-cols-5' : 'grid-cols-1'; ?>">
                     
                     <?php if ($has_thumbnail) : ?>
                         <div class="col-span-1">
