@@ -5,7 +5,7 @@
     $custom_classes = !empty($block['className']) ? esc_attr($block['className']) : '';
 ?>
 
-<section class="hero <?php echo $custom_classes; ?> inset-x-0 relative h-screen overflow-hidden mb-8">
+<section class="hero <?php echo $custom_classes; ?> alignfull inset-x-0 relative h-screen overflow-hidden mb-8">
     <video class="absolute inset-0 w-full h-full object-cover backdrop-blur-md" autoplay muted loop playsinline>
         <source src="<?php echo esc_url($background_video); ?>" type="video/mp4">
         Your browser does not support the video tag.

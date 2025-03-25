@@ -15,6 +15,17 @@ function my_acf_register_blocks() {
                 ),
             ],
             [
+                'name'            => 'steps',
+                'title'           => __('Steps Block'),
+                'render_template' => get_template_directory() . '/template-parts/blocks/steps.php',
+                'icon'            => 'cover-image',
+                'keywords'        => ['Steps'],
+                'supports'          => array(
+                    'anchor' => true, 
+                    'customClassName' => true,
+                ),
+            ],
+            [
                 'name'            => 'latest-posts',
                 'title'           => __('Latest Posts Block'),
                 'render_template' => get_template_directory() . '/template-parts/blocks/latest-posts.php',

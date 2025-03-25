@@ -2,6 +2,7 @@
 @import './theme.css';
 @import './utilities.css';
 @import './hamburger.css';
+@import './steps.css';
 @import './custom.css' layer(utilities);
 
 /*
