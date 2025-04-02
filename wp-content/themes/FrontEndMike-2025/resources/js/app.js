@@ -20,48 +20,53 @@ window.addEventListener('load', function () {
   });
 
 const projects = document.querySelectorAll('.project');
-if(projects){
-      document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.filter-button');
-    const projects = document.querySelectorAll('.project');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-            this.classList.toggle('active');
+if (projects) {
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.filter-button');
+        const projects = document.querySelectorAll('.project');
+        const noProjectsMessage = document.querySelector('#no-projects-message');
 
-            const selectedCategories = [];
-            
-            buttons.forEach(button => {
-                if (button.classList.contains('active')) {
-                    selectedCategories.push(button.getAttribute('data-category'));
-                }
-            });
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                this.classList.toggle('active');
 
+                const selectedCategories = [];
 
-            projects.forEach(project => {
-                const projectCategories = project.classList;
+                buttons.forEach(button => {
+                    if (button.classList.contains('active')) {
+                        selectedCategories.push(button.getAttribute('data-category'));
+                    }
+                });
 
-                // If no categories are selected, show all projects
-                if (selectedCategories.length === 0) {
-                    project.style.display = 'grid';
-                } else {
-                    let showProject = true;
+                let anyVisible = false;
 
-                    selectedCategories.forEach(category => {
-                        if (!projectCategories.contains('category-' + category)) {
-                            showProject = false;
-                        }
-                    });
+                projects.forEach(project => {
+                    const projectCategories = project.classList;
 
-                    // Toggle visibility based on matching all categories
-                    project.style.display = showProject ? 'grid' : 'none';
+                    if (selectedCategories.length === 0) {
+                        project.style.display = 'grid';
+                        anyVisible = true;
+                    } else {
+                        let showProject = selectedCategories.every(category =>
+                            projectCategories.contains('category-' + category)
+                        );
+
+                        project.style.display = showProject ? 'grid' : 'none';
+
+                        if (showProject) anyVisible = true;
+                    }
+                });
+
+                // Show or hide the no-projects message
+                if (noProjectsMessage) {
+                    noProjectsMessage.style.display = anyVisible ? 'none' : 'block';
                 }
             });
         });
     });
-});
-
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const hamButton = document.getElementById("ham-interior");

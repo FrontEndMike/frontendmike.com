@@ -58,6 +58,7 @@ if (projects) {
   document.addEventListener('DOMContentLoaded', function () {
     var buttons = document.querySelectorAll('.filter-button');
     var projects = document.querySelectorAll('.project');
+    var noProjectsMessage = document.querySelector('#no-projects-message');
     buttons.forEach(function (button) {
       button.addEventListener('click', function () {
         this.classList.toggle('active');
@@ -67,24 +68,25 @@ if (projects) {
             selectedCategories.push(button.getAttribute('data-category'));
           }
         });
+        var anyVisible = false;
         projects.forEach(function (project) {
           var projectCategories = project.classList;
-
-          // If no categories are selected, show all projects
           if (selectedCategories.length === 0) {
             project.style.display = 'grid';
+            anyVisible = true;
           } else {
-            var showProject = true;
-            selectedCategories.forEach(function (category) {
-              if (!projectCategories.contains('category-' + category)) {
-                showProject = false;
-              }
+            var showProject = selectedCategories.every(function (category) {
+              return projectCategories.contains('category-' + category);
             });
-
-            // Toggle visibility based on matching all categories
             project.style.display = showProject ? 'grid' : 'none';
+            if (showProject) anyVisible = true;
           }
         });
+
+        // Show or hide the no-projects message
+        if (noProjectsMessage) {
+          noProjectsMessage.style.display = anyVisible ? 'none' : 'block';
+        }
       });
     });
   });

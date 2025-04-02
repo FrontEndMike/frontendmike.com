@@ -16,13 +16,13 @@
             <div class="absolute inset-0 bg-black/40"></div>
 </section>
 
-<main class="container mx-auto py-12 px-4 max-w-[900px]">
+<main class="container mx-auto py-12 px-4">
     <?php if (have_posts()) : ?>
-        <div class="grid grid-cols-1  gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4 sm:gap-8">
             <?php while (have_posts()) : the_post(); ?>
                 <?php $has_thumbnail = has_post_thumbnail(); ?>
                 
-                <article class="grid grid-cols-1 isolate relative mb-8 sm:mb-0 sm:gap-4 <?php echo $has_thumbnail ? 'sm:grid-cols-5' : 'grid-cols-1'; ?>">
+                <article class="article-element">
                     
                     <?php if ($has_thumbnail) : ?>
                         <div class="col-span-1">

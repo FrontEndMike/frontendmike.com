@@ -19,6 +19,7 @@
 <main class="container mx-auto">
     <div class="px-4">
         <p class="mb-6 mt-4">All Sites listed here were custom built using a blank starter theme. Also, all projects listed here are ones where I did 100% of the front end development.</p>
+
     <?php
         $terms = get_terms( array(
             'taxonomy'   => 'project_category',
@@ -74,7 +75,7 @@ if ( $query->have_posts() ) :  ?>
                 }
             } ?>
                 <article class="project article-element <?php echo esc_attr( $category_classes ); ?>">
-                    <div class=" p-4 rounded-lg h-full">
+                    <div class="rounded-lg h-full">
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 
                                 alt="<?php the_title_attribute(); ?>" 
@@ -101,6 +102,9 @@ if ( $query->have_posts() ) :  ?>
                 </article>
             <?php endwhile; ?>
         </div>
+        <p id="no-projects-message" class="text-center text-gray-500 mt-4" style="display: none;">
+            No projects match your criteria.
+        </p>
 
         <!-- Pagination -->
         <div class="mt-8 flex justify-center">

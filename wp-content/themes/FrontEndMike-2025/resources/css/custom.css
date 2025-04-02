@@ -134,12 +134,12 @@ figure.figure-margin.wp-block-image img {
 }
 
 .article-element{
-    @apply hover:scale-102 transition-transform duration-300 ease-in-out isolate relative border-solid border-black border-1 p-1 rounded-lg relative mb-8
+    @apply shadow-lg hover:scale-102 transition-transform duration-300 ease-in-out isolate relative border-solid border-black border-1 p-4 rounded-lg relative mb-8
 }
 article > *:not(.entry-content),
 .entry-content > * {
     margin-inline: 0 !important;
 }
 .button{
-    @apply border border-black px-3 py-2 bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-xl;
+    @apply shadow-lg border border-black px-3 py-2 bg-white text-black rounded-[25px] hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer text-xl;
 }

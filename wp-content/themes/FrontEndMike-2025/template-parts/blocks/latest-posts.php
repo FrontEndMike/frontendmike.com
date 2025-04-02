@@ -17,12 +17,12 @@
     <?php if ($recent_posts->have_posts()) : ?>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <?php while ($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
-                <article class="project article-element <?php echo esc_attr( $category_classes ); ?>">
-                    <div class=" p-4 rounded-lg h-full">
+                <article class="article-element rounded-lg border-black border-[1px] <?php echo esc_attr( $category_classes ); ?>">
+                    <div class=" rounded-lg h-full">
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 
                                 alt="<?php the_title_attribute(); ?>" 
-                                class="w-full rounded-lg mb-4 object-cover ">
+                                class="w-full rounded-t-lg mb-4 object-cover ">
                         <?php endif; ?>
                         <h3 class="text-xl font-semibold mb-2 mt-2 leading-none">
                             <a href="<?php the_permalink(); ?>">
