@@ -26,11 +26,11 @@
 				<div class="flex justify-between items-center">
 					<div>
 						<?php if ( has_custom_logo() ) { ?>
-                            <div class="flex flex-wrap gap-2 mb-1">
-								<div class="hidden sm:block max-[400px]:hidden">
+                            <div class="flex items-center flex-wrap gap-2">
+								<div>
 									<?php the_custom_logo(); ?>
 								</div>
-								<div>
+								<div class="hidden sm:block max-[400px]:hidden">
 									<a style="line-height: 0.9;" href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
 										<?php echo get_bloginfo( 'name' ); ?>
 									</a>
@@ -53,11 +53,11 @@
 					</div>
 					
 					<div class="md:hidden lg:hidden flex items-center">
-						<div class="gap-4 flex md:hidden lg:hidden mr-4 mb-2">
+						<!-- <div class="gap-4 flex md:hidden lg:hidden mr-4 mb-2">
 							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i><span class="sr-only">LinkedIn</span></a>
 
 							<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i><span class="sr-only">Github</span></a>
-						</div>
+						</div> -->
 
 						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
 					<button id="ham-interior" class="ham-menu hamburger--spin is-inactive" type="button">
@@ -69,13 +69,13 @@
 					</div>
 				</div>
 				<div class="flex items-center">
-					<div class="gap-2 hidden md:flex lg:flex mr-2">
+					<!-- <div class="gap-2 hidden md:flex lg:flex mr-2">
 						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://www.linkedin.com/in/frontendmike/"><i class="fa-brands fa-linkedin"></i>
 							<span class="sr-only">LinkedIn</span>
 					</a>
 
 						<a class="border border-black nav-icon bg-white text-black rounded-[25px] shadow-sm hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer" target="_blank" href="https://github.com/FrontEndMike"><i class="fa-brands fa-github"></i><span class="sr-only">Github</span></a>
-					</div>
+					</div> -->
 				<?php
 				wp_nav_menu(
 					array(

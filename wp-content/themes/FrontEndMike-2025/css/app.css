@@ -394,6 +394,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -505,9 +508,6 @@
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
-  }
-  .pt-16 {
-    padding-top: calc(var(--spacing) * 16);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -647,6 +647,11 @@
   .sm\:grid-cols-5 {
     @media (width >= 600px) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 600px) {
+      flex-direction: row;
     }
   }
   .sm\:gap-4 {
@@ -1735,7 +1740,7 @@
     font-size: 14px;
   }
   header img {
-    max-height: 40px;
+    max-height: 43px;
     width: auto;
   }
   #content {

@@ -18,7 +18,7 @@
 
 <main class="container mx-auto">
     <div class="px-4">
-        <p class="mb-6">All Sites listed here were custom built using a blank starter theme. Also, all projects listed here are ones where I did 100% of the front end development.</p>
+        <p class="mb-6 mt-4">All Sites listed here were custom built using a blank starter theme. Also, all projects listed here are ones where I did 100% of the front end development.</p>
     <?php
         $terms = get_terms( array(
             'taxonomy'   => 'project_category',

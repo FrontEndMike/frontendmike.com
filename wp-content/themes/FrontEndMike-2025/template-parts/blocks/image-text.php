@@ -8,8 +8,8 @@
   class="alignfull relative bg-cover bg-center pt-8"
   style="background-image: url('<?php echo esc_url($background_img['url']); ?>');"
 >
-  <div class="container mx-auto relative z-10 flex flex-wrap">
-    <div class="w-full md:w-1/3 relative min-h-[500px] mb-4 sm:mb-0">
+  <div class="container mx-auto relative z-10 flex flex-wrap flex-col-reverse sm:flex-row">
+    <div class="w-full md:w-1/3 relative min-h-[500px] ">
       <?php if ($left_image): ?>
         <img 
           src="<?php echo esc_url($left_image['url']); ?>" 
