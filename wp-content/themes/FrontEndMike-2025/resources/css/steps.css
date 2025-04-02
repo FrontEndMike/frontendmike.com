@@ -17,6 +17,11 @@
     position: relative;
 }
 
+.step-body li {
+    list-style: circle;
+    margin-bottom: 1rem;
+}
+
 .step:last-of-type {
     margin-bottom: 5px;
 }
@@ -58,6 +63,9 @@
     border-radius: 25px;
     font-size: 1rem;
 }
+#menu-the-main-menu{
+    list-style: none;
+}
 
 .step-content blockquote cite {
     font-size: 18px;
@@ -86,7 +94,7 @@
     margin-top: 10px;
 }
 
-.step-body p, li {
+.step-body p {
     margin-bottom: 1rem;
 }
 

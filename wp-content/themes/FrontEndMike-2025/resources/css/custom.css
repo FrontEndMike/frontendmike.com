@@ -31,7 +31,6 @@ a{
     }
     p, ul, ol {
         a {
-            @apply text-blue-500 underline;
 
             &:hover {
                 @apply no-underline;
@@ -105,7 +104,8 @@ header img{
 
 .hero{
     height: 30rem;
-    margin-bottom: 1rem !important;
+    left: 0;
+    right: 0;
 }
 .nav-icon{
     padding: 2px 9px;
@@ -120,10 +120,6 @@ pre {
     padding: 0.25rem .75rem;
     margin: 0.5rem 0;
     white-space: pre-wrap;
-}
-.hero{
-    left: 0;
-    right: 0;
 }
 
 .filter-button.active {

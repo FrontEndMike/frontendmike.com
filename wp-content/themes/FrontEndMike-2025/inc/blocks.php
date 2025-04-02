@@ -26,6 +26,17 @@ function my_acf_register_blocks() {
                 ),
             ],
             [
+                'name'            => 'image-text',
+                'title'           => __('Image & Text Block'),
+                'render_template' => get_template_directory() . '/template-parts/blocks/image-text.php',
+                'icon'            => 'cover-image',
+                'keywords'        => ['Image, Text'],
+                'supports'          => array(
+                    'anchor' => true, 
+                    'customClassName' => true,
+                ),
+            ],
+            [
                 'name'            => 'latest-posts',
                 'title'           => __('Latest Posts Block'),
                 'render_template' => get_template_directory() . '/template-parts/blocks/latest-posts.php',
