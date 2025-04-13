@@ -79,9 +79,9 @@ if ( $query->have_posts() ) :  ?>
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 
                                 alt="<?php the_title_attribute(); ?>" 
-                                class="w-full rounded-lg mb-4 object-cover ">
+                                class="">
                         <?php endif; ?>
-                        <h3 class="text-xl font-semibold mb-2 mt-2 leading-none">
+                        <h3 class="">
                             <a href="<?php the_permalink(); ?>">
                             <span class="z-10 absolute inset-0"></span>
                                 <?php the_title(); ?>

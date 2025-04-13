@@ -22,7 +22,7 @@
                         <?php if (has_post_thumbnail()) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" 
                                 alt="<?php the_title_attribute(); ?>" 
-                                class="w-full rounded-t-lg mb-4 object-cover ">
+                                class="">
                         <?php endif; ?>
                         <h3 class="text-xl font-semibold mb-2 mt-2 leading-none">
                             <a href="<?php the_permalink(); ?>">
@@ -30,6 +30,24 @@
                                 <?php the_title(); ?>
                             </a>
                         </h3>
+                        <?php 
+                            $project_source = get_field('project_source', get_the_ID()); 
+                            if ($project_source) : ?>
+                            <p class="text-md mb-2"><?php echo esc_html($project_source); ?></p>
+                        <?php endif; ?>
+                        <?php
+                            $post_type = get_post_type();
+                            $taxonomy = ($post_type === 'post') ? 'category' : 'project_category'; 
+                            $categories = get_the_terms(get_the_ID(), $taxonomy);
+                        ?>
+                        <?php if ($categories && !is_wp_error($categories)) : ?>
+                            <p class="text-sm text-gray-500 block mt-2 mb-2">
+                                <?php
+                                $category_names = wp_list_pluck( $categories, 'name' );
+                                echo implode( ' – ', $category_names );
+                                ?>
+                            </p>
+                        <?php endif; ?>
 
                         <?php if (!empty(get_the_excerpt())) : ?>
                             <hr class="mb-2">

@@ -8,7 +8,7 @@
             $body = get_sub_field('body');
         ?>
             <div class="step">
-                <div class="step-number">
+                <div class="step-number shadow-lg">
                     <span></span>
                 </div>
                 <div class="step-content is-dark-blue">

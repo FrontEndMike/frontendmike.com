@@ -9,7 +9,7 @@
 			</div>
 			<?php endif; ?>
 		<div class="col-span-3">
-			<h1 class="text-2xl leading-[24px] sm:text-4xl font-extrabold sm:leading-[30px] mb-2"><?php the_title(); ?></h1>
+			<h2 class="text-2xl leading-[24px] sm:text-4xl font-extrabold sm:leading-[30px] mb-2"><?php the_title(); ?></h2>
 			<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-gray-700"><?php echo get_the_date(); ?></time>
 			<?php
 				$categories = get_the_terms( get_the_ID(), 'project_category' );

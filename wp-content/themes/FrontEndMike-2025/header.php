@@ -82,7 +82,7 @@
 					array(
 						'container_id'    => 'primary-menu',
 						'container_class' => 'hidden bg-white  p-2 lg:p-0 lg:bg-transparent lg:flex md:flex transition-all duration-300 ease-in-out text-lg',
-						'menu_class'      => 'lg:flex md:flex',
+						'menu_class'      => 'lg:flex md:flex gap-4',
 						'theme_location'  => 'primary',
 						'li_class'        => 'lg:mx-2 md:mx-2 mt-4 md:mt-0 lg:mt-0',
 						'fallback_cb'     => false,

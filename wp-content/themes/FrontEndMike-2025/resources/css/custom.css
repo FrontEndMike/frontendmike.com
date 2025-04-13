@@ -137,6 +137,12 @@ figure.figure-margin.wp-block-image img {
 .article-element{
     @apply shadow-lg hover:scale-102 transition-transform duration-300 ease-in-out isolate relative border-solid border-black border-1 p-4 rounded-lg relative mb-8
 }
+.article-element img{
+    @apply shadow-lg w-full rounded-lg object-cover mb-4;
+}
+.article-element h3{
+    @apply text-xl font-semibold mb-2 mt-2 leading-none;
+}
 article > *:not(.entry-content),
 .entry-content > * {
     margin-inline: 0 !important;
