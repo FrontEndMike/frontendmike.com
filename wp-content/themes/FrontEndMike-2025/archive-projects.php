@@ -67,13 +67,13 @@ $query = new WP_Query( $args );
 if ( $query->have_posts() ) :  ?>
         <div class="grid gradient-container  px-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php while (have_posts()) : the_post();
-            $categories = get_the_terms( get_the_ID(), 'project_category' );
-            $category_classes = '';
-            if ( $categories ) {
-                foreach ( $categories as $category ) {
-                    $category_classes .= ' category-' . $category->slug . ' ';
-                }
-            } ?>
+                $categories = get_the_terms( get_the_ID(), 'project_category' );
+                $category_classes = '';
+                if ( $categories ) {
+                    foreach ( $categories as $category ) {
+                        $category_classes .= ' category-' . $category->slug . ' ';
+                    }
+                } ?>
                 <article class="project article-element <?php echo esc_attr( $category_classes ); ?>">
                     <div class="rounded-lg h-full">
                         <?php if (has_post_thumbnail()) : ?>
@@ -90,7 +90,15 @@ if ( $query->have_posts() ) :  ?>
                         <?php 
                             $project_source = get_field('project_source'); 
                             if ($project_source) : ?>
-                            <p class="text-sm mb-2"><?php echo esc_html($project_source); ?></p>
+                            <p class="text-md mb-2"><?php echo esc_html($project_source); ?></p>
+                        <?php endif; ?>
+                        <?php if ( $categories ) : ?>
+                            <p class="text-sm text-gray-500 block mt-2 mb-2">
+                                <?php
+                                $category_names = wp_list_pluck( $categories, 'name' );
+                                echo implode( ' – ', $category_names );
+                                ?>
+                            </p>
                         <?php endif; ?>
                         <?php if (!empty(get_the_excerpt())) : ?>
                             <hr class="mb-2">
@@ -102,7 +110,7 @@ if ( $query->have_posts() ) :  ?>
                 </article>
             <?php endwhile; ?>
         </div>
-        <p id="no-projects-message" class="text-center text-gray-500 mt-4" style="display: none;">
+        <p id="no-projects-message" class="text-center text-gray-500 mt-4" style="display: none; height: 10rem;">
             No projects match your criteria.
         </p>
 

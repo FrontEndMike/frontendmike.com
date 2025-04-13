@@ -3,6 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+	<meta property="og:image" content="http://frontendmike.com/wp-content/uploads/2025/04/cropped-IMG_9886-e1743555604114-2-1-1.webp" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -31,10 +32,10 @@
 									<?php the_custom_logo(); ?>
 								</div>
 								<div class="hidden sm:block max-[400px]:hidden">
-									<a style="line-height: 0.9;" href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
+									<a style="line-height: 0.9;" href="<?php echo get_bloginfo( 'url' ); ?>" class="mb-1 block font-extrabold text-lg uppercase">
 										<?php echo get_bloginfo( 'name' ); ?>
 									</a>
-									<p style="line-height: 0.9;" class="text-sm font-light text-gray-600">
+									<p style="line-height: 0.9;" class="text-sm font-light">
 										<span class="hidden md:inline lg:inline">Atlanta, GA -</span> Front End Web Developer
 									</p>
 								</div>

@@ -8,16 +8,16 @@ window.addEventListener('load', function () {
 });
 
 //Scroll effect
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-      header.classList.add("py-2");
-      header.classList.remove("p-4");
-    } else {
-      header.classList.add("p-4");
-      header.classList.remove("py-2");
-    }
-  });
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    header.classList.add("py-2");
+    header.classList.remove("p-4");
+  } else {
+    header.classList.add("p-4");
+    header.classList.remove("py-2");
+  }
+});
 
 const projects = document.querySelectorAll('.project');
 
